@@ -67,3 +67,17 @@ File: [`data/fr02.json`](../data/fr02.json) — 18 phần tử, mỗi phần t�
 | `expected.emailInputType`, `passwordInputType`, `requiredMarkOnLabels` | Thuộc tính form theo FR-22 |
 | `expected.uiMessagePattern`, `errorAboveSubmit` | Nội dung và vị trí thông báo khi bị khóa |
 | `note` | Căn cứ đặc tả / giả định, và bug HW02 liên quan (nếu có) |
+
+## S3. Page Object
+
+File: [`pages/LoginPage.ts`](../pages/LoginPage.ts). Helper dùng chung: [`helpers/backend.ts`](../helpers/backend.ts) (reset backend để xóa bộ đếm đăng nhập sai), [`helpers/data.ts`](../helpers/data.ts) (đọc `data/fr02.json`).
+
+| Phần tử | Selector | Lý do |
+|---|---|---|
+| Ô email | `getByText(/^(Username\|Email)\s*\*?$/)` → khối cha → `input` | `<label>` không gắn với ô nhập (không có `htmlFor`), ô nhập không có placeholder → không dùng được `getByLabel`/`getByPlaceholder`. Regex chấp nhận cả nhãn "Email" nếu giao diện được sửa |
+| Ô mật khẩu | `getByText(/^Mật khẩu\s*\*?$/)` → khối cha → `input` | Như trên. Không dùng `getByRole('textbox')` vì khi sửa đúng thành `type="password"` thì ô không còn vai trò textbox |
+| Nút đăng nhập | `getByRole('button', { name: /Sign In\|Đăng nhập/i })` | Nhãn hiện tại "Sign In" (tiếng Anh, bug #95) |
+| Thông báo lỗi | `getByText(/thất bại\|không đúng\|khóa\|lỗi/i)` | Không có vai trò `alert` |
+| Response đăng nhập | `page.waitForResponse('/api/login')` trong `login()` | Phân biệt 401 (sai) và 403 (khóa) ngay trong test UI |
+
+Không dùng XPath hay class Tailwind. Đã chạy thử trên Chromium, Firefox, WebKit.
