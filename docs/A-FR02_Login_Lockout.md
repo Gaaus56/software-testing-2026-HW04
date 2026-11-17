@@ -49,3 +49,21 @@ Cột cuối: kết quả HW02 và kết quả dự kiến khi tự động hóa
 | FR02-EP-14 | API | Phải chờ hết thời gian khóa thực tế (~180 s, BUG-FR02-02) cho mỗi trình duyệt → chạy quá lâu, dễ flaky |
 | FR02-BVA-08a | API | Ca khám phá đo thời gian khóa thực tế (175 s), không có kết quả mong đợi theo đặc tả; quá lâu cho chạy 3 trình duyệt |
 | FR02-BVA-08b | API | Như BVA-08a (185 s) |
+
+## S2. File dữ liệu
+
+File: [`data/fr02.json`](../data/fr02.json) — 18 phần tử, mỗi phần tử gồm `id`, `input`, `expected`, `note`. Script chỉ đọc file này; không có dữ liệu test viết cứng trong script.
+
+| Trường | Ý nghĩa |
+|---|---|
+| `input.preAttempts` | Danh sách lần đăng nhập qua form **trước** lần chính (ví dụ 3 lần mật khẩu sai để khóa tài khoản) |
+| `input.waitSeconds` | Số giây chờ sau `preAttempts` (biên thời gian khóa 29 / 30 / 31 s) |
+| `input.login` | Email + mật khẩu của lần đăng nhập chính; `null` nếu chỉ kiểm giao diện form (EP-09) |
+| `input.afterLogin` | Hành động sau khi đăng nhập (`openProfile` để bắt request có header xác thực) |
+| `expected.outcome` | `success` / `rejected` / `locked` |
+| `expected.apiStatusClass` | Nhóm status của response `POST /api/login` bắt được trong lúc test UI (`4xx`) |
+| `expected.sameResponseAs` | So thông báo với một TC khác (EP-03 phải giống EP-02, không lộ nguyên nhân) |
+| `expected.loginRequestSent` | `false` khi trình duyệt phải chặn submit |
+| `expected.emailInputType`, `passwordInputType`, `requiredMarkOnLabels` | Thuộc tính form theo FR-22 |
+| `expected.uiMessagePattern`, `errorAboveSubmit` | Nội dung và vị trí thông báo khi bị khóa |
+| `note` | Căn cứ đặc tả / giả định, và bug HW02 liên quan (nếu có) |

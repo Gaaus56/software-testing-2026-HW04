@@ -1,0 +1,420 @@
+[
+  {
+    "id": "FR02-EP-01",
+    "input": {
+      "preAttempts": [],
+      "waitSeconds": 0,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "success",
+      "urlPath": "/",
+      "tokenStored": true
+    },
+    "note": "Positive. Đặc tả R1, R5, R6"
+  },
+  {
+    "id": "FR02-EP-02",
+    "input": {
+      "preAttempts": [],
+      "waitSeconds": 0,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Wrong123!"
+      }
+    },
+    "expected": {
+      "outcome": "rejected",
+      "apiStatusClass": "4xx",
+      "tokenStored": false,
+      "uiErrorVisible": true
+    },
+    "note": "Negative: mật khẩu sai. R2, R4"
+  },
+  {
+    "id": "FR02-EP-03",
+    "input": {
+      "preAttempts": [],
+      "waitSeconds": 0,
+      "login": {
+        "email": "khongtontai@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "rejected",
+      "apiStatusClass": "4xx",
+      "sameResponseAs": "FR02-EP-02"
+    },
+    "note": "Negative: email chưa đăng ký; thông báo phải giống EP-02 (không lộ nguyên nhân). R4, A6"
+  },
+  {
+    "id": "FR02-EP-04",
+    "input": {
+      "preAttempts": [],
+      "waitSeconds": 0,
+      "login": {
+        "email": "abc",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "loginRequestSent": false
+    },
+    "note": "Negative: email sai định dạng, trình duyệt phải chặn do type=email. R7. HW02 Fail → bug #93"
+  },
+  {
+    "id": "FR02-EP-05",
+    "input": {
+      "preAttempts": [],
+      "waitSeconds": 0,
+      "login": {
+        "email": "",
+        "password": ""
+      }
+    },
+    "expected": {
+      "loginRequestSent": false
+    },
+    "note": "Negative: để trống cả hai ô. R1, FR-22"
+  },
+  {
+    "id": "FR02-EP-06",
+    "input": {
+      "preAttempts": [],
+      "waitSeconds": 0,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "rejected",
+      "apiStatusClass": "4xx"
+    },
+    "note": "Negative: mật khẩu sai hoa/thường. R2"
+  },
+  {
+    "id": "FR02-EP-07",
+    "input": {
+      "preAttempts": [
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        }
+      ],
+      "waitSeconds": 0,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "locked",
+      "apiStatusClass": "4xx"
+    },
+    "note": "Negative: đang khóa thì mật khẩu đúng vẫn bị chặn. R3"
+  },
+  {
+    "id": "FR02-EP-08",
+    "input": {
+      "preAttempts": [],
+      "waitSeconds": 0,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      },
+      "afterLogin": "openProfile"
+    },
+    "expected": {
+      "authHeaderPrefix": "Bearer "
+    },
+    "note": "Positive: request cần xác thực mang header Authorization. R6"
+  },
+  {
+    "id": "FR02-EP-09",
+    "input": {
+      "preAttempts": [],
+      "waitSeconds": 0,
+      "login": null
+    },
+    "expected": {
+      "emailInputType": "email",
+      "passwordInputType": "password",
+      "requiredMarkOnLabels": true
+    },
+    "note": "Negative (GUI): thuộc tính form. R7, R8, FR-22. HW02 Fail → bug #92, #93, #95"
+  },
+  {
+    "id": "FR02-EP-10",
+    "input": {
+      "preAttempts": [
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        }
+      ],
+      "waitSeconds": 0,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "uiMessagePattern": "khóa",
+      "errorAboveSubmit": true
+    },
+    "note": "Negative (GUI): thông báo khi tài khoản đang khóa phải nói rõ là khóa, nằm trên nút submit. R3, R8, R9. HW02 Fail → bug #94"
+  },
+  {
+    "id": "FR02-EP-11",
+    "input": {
+      "preAttempts": [
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Test1234!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        }
+      ],
+      "waitSeconds": 0,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "success"
+    },
+    "note": "Negative: bộ đếm về 0 sau lần đăng nhập thành công (giả định A2). HW02 Fail → bug #90"
+  },
+  {
+    "id": "FR02-EP-12",
+    "input": {
+      "preAttempts": [
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        }
+      ],
+      "waitSeconds": 0,
+      "login": {
+        "email": "admin@eshop.com",
+        "password": "Admin123!"
+      }
+    },
+    "expected": {
+      "outcome": "success"
+    },
+    "note": "Positive: khóa test@ không ảnh hưởng tài khoản khác (giả định A3)"
+  },
+  {
+    "id": "FR02-BVA-01",
+    "input": {
+      "preAttempts": [
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        }
+      ],
+      "waitSeconds": 0,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "success"
+    },
+    "note": "Biên n = 2 lần sai → chưa khóa. R3. HW02 Fail → bug #90"
+  },
+  {
+    "id": "FR02-BVA-02",
+    "input": {
+      "preAttempts": [
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        }
+      ],
+      "waitSeconds": 0,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "locked"
+    },
+    "note": "Biên n = 3 lần sai → khóa. R3"
+  },
+  {
+    "id": "FR02-BVA-03",
+    "input": {
+      "preAttempts": [
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        }
+      ],
+      "waitSeconds": 0,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "locked"
+    },
+    "note": "Biên n = 4 lần sai → khóa. R3"
+  },
+  {
+    "id": "FR02-BVA-05",
+    "input": {
+      "preAttempts": [
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        }
+      ],
+      "waitSeconds": 29,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "locked"
+    },
+    "note": "Biên t = 29 s → vẫn khóa. R3, A4. Chạy chậm (test.slow)"
+  },
+  {
+    "id": "FR02-BVA-06",
+    "input": {
+      "preAttempts": [
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        }
+      ],
+      "waitSeconds": 30,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "success"
+    },
+    "note": "Biên t = 30 s → mở khóa. R3, A4. HW02 Fail → bug #91 (khóa ~180 s)"
+  },
+  {
+    "id": "FR02-BVA-07",
+    "input": {
+      "preAttempts": [
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        },
+        {
+          "email": "test@eshop.com",
+          "password": "Wrong123!"
+        }
+      ],
+      "waitSeconds": 31,
+      "login": {
+        "email": "test@eshop.com",
+        "password": "Test1234!"
+      }
+    },
+    "expected": {
+      "outcome": "success"
+    },
+    "note": "Biên t = 31 s → mở khóa. R3. HW02 Fail → bug #91"
+  }
+]
