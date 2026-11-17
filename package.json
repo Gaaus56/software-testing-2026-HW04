@@ -1,0 +1,23 @@
+{
+  "name": "software-testing-2026-hw04",
+  "version": "1.0.0",
+  "description": "Bài cá nhân HW04 (Automation Testing với Playwright) trên EShop (https://github.com/ttbhanh/eshop-sut). Dùng lại 3 feature Web đã chọn ở HW02 (repo HW02: `software-testing-2026-HW02`).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaaus56/software-testing-2026-HW04.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaaus56/software-testing-2026-HW04/issues"
+  },
+  "homepage": "https://github.com/Gaaus56/software-testing-2026-HW04#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}
