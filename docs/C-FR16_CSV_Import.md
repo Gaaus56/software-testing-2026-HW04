@@ -79,3 +79,22 @@ Cột cuối: kết quả HW02 và kết quả dự kiến khi tự động hóa
 | `expected.importDisabled` | Nút "Import" phải bị vô hiệu (file không có dòng dữ liệu) |
 | `expected.renderedAsTextOnWeb` | Tên chứa HTML phải hiện nguyên văn trên trang chủ Web |
 | `note` | Căn cứ đặc tả / giả định, bug HW02 liên quan |
+
+## S3. Page Object
+
+File: [`pages/AdminImportPage.ts`](../pages/AdminImportPage.ts). Helper: [`helpers/backend.ts`](../helpers/backend.ts) (`listProducts` để đếm sản phẩm trước/sau import).
+
+| Phần tử | Selector |
+|---|---|
+| Đăng nhập Admin | `getByPlaceholder('Email')`, `getByPlaceholder('Password')`, `getByRole('button', { name: 'Login' })` |
+| Menu Sản phẩm | `getByRole('listitem').filter({ hasText: /^Sản phẩm$/ })` |
+| Khối Import | `div` nhỏ nhất chứa cả `getByRole('heading', { name: /Import sản phẩm từ CSV/ })` và ô chọn file |
+| Ô chọn file | `input[type="file"]` trong khối Import (ô không có nhãn hay vai trò truy cập, nên định vị theo thuộc tính) |
+| Nút Import | `getByRole('button', { name: /^Import \d+ sản phẩm$/ })` |
+| Hộp kết quả | `getByText(/Import hoàn tất\|❌/)` → khối cha |
+
+Lỗi tự phát hiện khi chạy thử Page Object (ghi lại cho phần gap analysis):
+1. **Khối Import chọn sai:** bản đầu lấy `div` nhỏ nhất chỉ chứa tiêu đề, nên không tìm thấy ô chọn file. Sửa thành `div` nhỏ nhất chứa **cả** tiêu đề và ô chọn file.
+2. **Chờ không ổn định trên WebKit:** bản đầu dùng `isVisible()` ngay sau `goto` để quyết định có cần đăng nhập không. WebKit kiểm tra trước khi React vẽ form, nên bỏ qua bước đăng nhập rồi timeout. Sửa: chờ `emailInput.or(productsMenu)` xuất hiện rồi mới quyết định.
+
+Sau khi sửa, chạy thử Pass trên Chromium, Firefox, WebKit.
