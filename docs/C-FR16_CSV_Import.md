@@ -98,3 +98,18 @@ Lỗi tự phát hiện khi chạy thử Page Object (ghi lại cho phần gap a
 2. **Chờ không ổn định trên WebKit:** bản đầu dùng `isVisible()` ngay sau `goto` để quyết định có cần đăng nhập không. WebKit kiểm tra trước khi React vẽ form, nên bỏ qua bước đăng nhập rồi timeout. Sửa: chờ `emailInput.or(productsMenu)` xuất hiện rồi mới quyết định.
 
 Sau khi sửa, chạy thử Pass trên Chromium, Firefox, WebKit.
+
+## S4. Script do AI sinh (bản đầu)
+
+File: [`tests/fr16-import.spec.ts`](../tests/fr16-import.spec.ts) — commit `[C-FR16][S4]` là **bản gốc AI sinh**, chưa chạy, chưa review.
+
+- **Data-driven:** đọc `data/fr16.json`, 26 test. Mỗi test: reset backend → đếm sản phẩm (API) → Admin chọn file trong `data/fr16-csv/` → Import → đếm lại.
+- **Kiểu assertion:**
+
+| Kiểu | Ví dụ trong script | Dùng cho |
+|---|---|---|
+| Độ dài tập dữ liệu | `expect(added).toHaveLength(expected.added)` | Số sản phẩm thêm vào DB (rollback) |
+| Nội dung | `expect(ap.resultBox).toContainText(/giá\|price/i)` | Lý do lỗi trong báo cáo import |
+| So tập hợp | `expect(names).toEqual(expect.arrayContaining([...]))` | Tên sản phẩm lưu đúng nguyên văn |
+| Trạng thái phần tử | `expect(ap.importButton).toBeDisabled()` | File không có dòng dữ liệu |
+| Hiển thị / số lượng | `toBeVisible()`, `toHaveCount(0)` | Tên có HTML hiện dạng chữ trên Web |
