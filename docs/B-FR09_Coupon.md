@@ -81,3 +81,25 @@ File: [`data/fr09.json`](../data/fr09.json) — 24 phần tử (`id`, `input`, `
 | `note` | Căn cứ đặc tả / giả định, bug HW02 liên quan |
 
 Lưu ý: EP-07 và EP-08 ở HW02 chỉ kiểm "áp dụng thành công", nên được Pass. Ở HW04, `expected` kiểm thêm số tiền theo công thức, nên dự kiến sẽ Fail do bug #96.
+
+## S3. Page Object
+
+File: [`pages/CheckoutPage.ts`](../pages/CheckoutPage.ts) (chi tiết sản phẩm → giỏ hàng → Checkout). Helper: [`helpers/backend.ts`](../helpers/backend.ts) (`createProduct`, `createCoupon` để chuẩn bị tổng đơn và coupon biên ngày).
+
+| Phần tử | Selector |
+|---|---|
+| Nút thêm vào giỏ | `getByRole('button', { name: /Thêm vào giỏ\|Đã thêm/ })` |
+| Link giỏ hàng | `getByRole('link', { name: 'Giỏ hàng', exact: true })` |
+| Nút thanh toán | `getByRole('button', { name: /Tiến hành thanh toán/ })` |
+| Ô mã giảm giá | `getByPlaceholder('Nhập mã giảm giá...')` |
+| Nút áp dụng | `getByRole('button', { name: 'Áp dụng' })` |
+| Khối mã giảm giá | `getByText('Mã Giảm Giá', { exact: true })` → khối cha |
+| Tiền giảm / thành tiền | Trong khối trên: `getByText(/^Tiết kiệm:/)` / `getByText(/^Thành tiền:/)` → `getByRole('strong')` |
+| Nút xác nhận đặt hàng | `getByRole('button', { name: /Xác Nhận Thanh Toán/ })` |
+
+Ghi chú khi viết:
+- Giỏ hàng Web chỉ lưu trong bộ nhớ trang, nên từ trang chi tiết sang Checkout phải đi bằng click, không `page.goto`.
+- Trang chi tiết Web cần bấm "Thêm vào giỏ" 2 lần mới thêm (hành vi của FR-06 Web, ngoài phạm vi). `addProductToCart` bấm lần 2 nếu nút chưa đổi sang "Đã thêm", rồi chờ "Đã thêm".
+- `parseMoney` đổi chuỗi hiển thị (định dạng `toLocaleString` en-US: `30,000.1 ₫`) thành số để so với `expected` trong file dữ liệu.
+
+Đã chạy thử trên Chromium, Firefox, WebKit (áp VIP100 cho đơn 400.000 → 100,000 ₫ / 300,000 ₫).
