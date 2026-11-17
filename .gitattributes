@@ -1,0 +1,2 @@
+# File dữ liệu test FR-16: giữ nguyên từng byte (CRLF, BOM, nhị phân), Git không được đổi xuống dòng
+data/fr16-csv/** -text
