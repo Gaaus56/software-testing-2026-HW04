@@ -1,0 +1,364 @@
+[
+  {
+    "id": "FR09-EP-01",
+    "input": {
+      "code": "SAVE10",
+      "productPrice": 1000000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 100000,
+      "final": 900000,
+      "tolerance": 0.5
+    },
+    "note": "Positive, percent: 1.000.000 × 10 % = 100.000. C1–C5. HW02 Fail → bug #96"
+  },
+  {
+    "id": "FR09-EP-02",
+    "input": {
+      "code": "BIGBUY",
+      "productPrice": 600000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 50000,
+      "final": 550000,
+      "tolerance": 0.5
+    },
+    "note": "Positive, fixed 50.000. R-fixed"
+  },
+  {
+    "id": "FR09-EP-03",
+    "input": {
+      "code": "VIP100",
+      "productPrice": 400000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 100000,
+      "final": 300000,
+      "tolerance": 0.5
+    },
+    "note": "Positive, fixed 100.000. R-fixed"
+  },
+  {
+    "id": "FR09-EP-04",
+    "input": {
+      "code": "ABC123",
+      "productPrice": 400000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "rejected",
+      "reasonPattern": "không tồn tại|vô hiệu"
+    },
+    "note": "Negative: mã không tồn tại. C1"
+  },
+  {
+    "id": "FR09-EP-06",
+    "input": {
+      "code": "",
+      "productPrice": 400000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applyDisabled"
+    },
+    "note": "Negative: ô mã trống → không áp dụng được"
+  },
+  {
+    "id": "FR09-EP-07",
+    "input": {
+      "code": "save10",
+      "productPrice": 400000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 40000,
+      "final": 360000,
+      "tolerance": 0.5
+    },
+    "note": "Positive: chữ thường được xử lý như SAVE10 (giả định A6). Số tiền theo công thức → dự kiến Fail vì bug #96"
+  },
+  {
+    "id": "FR09-EP-08",
+    "input": {
+      "code": "  SAVE10  ",
+      "productPrice": 400000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 40000,
+      "final": 360000,
+      "tolerance": 0.5
+    },
+    "note": "Positive: bỏ khoảng trắng đầu/cuối (A6). Dự kiến Fail vì bug #96"
+  },
+  {
+    "id": "FR09-EP-09",
+    "input": {
+      "code": "x' OR 1=1 --",
+      "productPrice": 400000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "rejected",
+      "reasonPattern": "không tồn tại|vô hiệu"
+    },
+    "note": "Negative: ký tự đặc biệt/SQL. C1, SEC-05"
+  },
+  {
+    "id": "FR09-EP-10",
+    "input": {
+      "code": "EXPIRED",
+      "productPrice": 200000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "rejected",
+      "reasonPattern": "hết hạn"
+    },
+    "note": "Negative: mã hết hạn (2020-01-01). C2"
+  },
+  {
+    "id": "FR09-EP-11",
+    "input": {
+      "code": "SAVE10",
+      "productPrice": 200000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "rejected",
+      "reasonPattern": "tối thiểu|chưa đủ"
+    },
+    "note": "Negative: tổng dưới ngưỡng 300.000. C3"
+  },
+  {
+    "id": "FR09-EP-15",
+    "input": {
+      "code": "SAVE10",
+      "productPrice": 400000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 40000,
+      "final": 360000,
+      "tolerance": 0.5,
+      "displayFormat": "thousands-separator-dong"
+    },
+    "note": "Positive (GUI): hiển thị 40,000 ₫ / 360,000 ₫. FR-21. HW02 Fail → bug #96"
+  },
+  {
+    "id": "FR09-EP-20",
+    "input": {
+      "code": "SAVE10",
+      "productPrice": 400000,
+      "placeOrderFirst": true
+    },
+    "expected": {
+      "outcome": "rejected",
+      "reasonPattern": "đã sử dụng|giới hạn"
+    },
+    "note": "Negative (E2E): đã đặt hàng với SAVE10 (1/1 lượt) → áp lại bị từ chối. C5"
+  },
+  {
+    "id": "FR09-BVA-01",
+    "input": {
+      "code": "SAVE10",
+      "productPrice": 299999,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "rejected",
+      "reasonPattern": "tối thiểu|chưa đủ"
+    },
+    "note": "Biên min − 1. C3"
+  },
+  {
+    "id": "FR09-BVA-02",
+    "input": {
+      "code": "SAVE10",
+      "productPrice": 300000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 30000,
+      "final": 270000,
+      "tolerance": 0.5
+    },
+    "note": "Biên = min (>=). C3. HW02 Fail → bug #97"
+  },
+  {
+    "id": "FR09-BVA-03",
+    "input": {
+      "code": "SAVE10",
+      "productPrice": 300001,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 30000.1,
+      "final": 270000.9,
+      "tolerance": 0.5
+    },
+    "note": "Biên min + 1; sai số làm tròn ≤ 0,5 (A8). HW02 Fail → bug #96"
+  },
+  {
+    "id": "FR09-BVA-04",
+    "input": {
+      "code": "BIGBUY",
+      "productPrice": 499999,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "rejected",
+      "reasonPattern": "tối thiểu|chưa đủ"
+    },
+    "note": "Biên min − 1. C3"
+  },
+  {
+    "id": "FR09-BVA-05",
+    "input": {
+      "code": "BIGBUY",
+      "productPrice": 500000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 50000,
+      "final": 450000,
+      "tolerance": 0.5
+    },
+    "note": "Biên = min. C3. HW02 Fail → bug #97"
+  },
+  {
+    "id": "FR09-BVA-06",
+    "input": {
+      "code": "BIGBUY",
+      "productPrice": 500001,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 50000,
+      "final": 450001,
+      "tolerance": 0.5
+    },
+    "note": "Biên min + 1. C3"
+  },
+  {
+    "id": "FR09-BVA-07",
+    "input": {
+      "code": "VIP100",
+      "productPrice": 299999,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "rejected",
+      "reasonPattern": "tối thiểu|chưa đủ"
+    },
+    "note": "Biên min − 1. C3"
+  },
+  {
+    "id": "FR09-BVA-08",
+    "input": {
+      "code": "VIP100",
+      "productPrice": 300000,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 100000,
+      "final": 200000,
+      "tolerance": 0.5
+    },
+    "note": "Biên = min. C3. HW02 Fail → bug #97"
+  },
+  {
+    "id": "FR09-BVA-09",
+    "input": {
+      "code": "VIP100",
+      "productPrice": 300001,
+      "placeOrderFirst": false
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 100000,
+      "final": 200001,
+      "tolerance": 0.5
+    },
+    "note": "Biên min + 1. C3"
+  },
+  {
+    "id": "FR09-BVA-11",
+    "input": {
+      "code": "DAYM1",
+      "productPrice": 100000,
+      "placeOrderFirst": false,
+      "coupon": {
+        "code": "DAYM1",
+        "type": "fixed",
+        "discount_value": 10000,
+        "min_order_amount": 0,
+        "expiredOffsetDays": -1,
+        "max_uses_per_user": 5
+      }
+    },
+    "expected": {
+      "outcome": "rejected",
+      "reasonPattern": "hết hạn"
+    },
+    "note": "Biên ngày: hạn = hôm qua. C2"
+  },
+  {
+    "id": "FR09-BVA-12",
+    "input": {
+      "code": "DAY0",
+      "productPrice": 100000,
+      "placeOrderFirst": false,
+      "coupon": {
+        "code": "DAY0",
+        "type": "fixed",
+        "discount_value": 10000,
+        "min_order_amount": 0,
+        "expiredOffsetDays": 0,
+        "max_uses_per_user": 5
+      }
+    },
+    "expected": {
+      "outcome": "rejected",
+      "reasonPattern": "hết hạn"
+    },
+    "note": "Biên ngày: hạn = hôm nay → hết hạn (giả định A1: \"trước\" là nghiêm ngặt). C2"
+  },
+  {
+    "id": "FR09-BVA-13",
+    "input": {
+      "code": "DAYP1",
+      "productPrice": 100000,
+      "placeOrderFirst": false,
+      "coupon": {
+        "code": "DAYP1",
+        "type": "fixed",
+        "discount_value": 10000,
+        "min_order_amount": 0,
+        "expiredOffsetDays": 1,
+        "max_uses_per_user": 5
+      }
+    },
+    "expected": {
+      "outcome": "applied",
+      "discount": 10000,
+      "final": 90000,
+      "tolerance": 0.5
+    },
+    "note": "Biên ngày: hạn = ngày mai → áp được. C2"
+  }
+]

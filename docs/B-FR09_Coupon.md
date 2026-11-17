@@ -63,3 +63,21 @@ Cột cuối: kết quả HW02 và kết quả dự kiến khi tự động hóa
 | FR09-BVA-16 | API | Coupon fixed 100.000 với đơn < 100.000: SP giá 99.999 qua UI làm được, nhưng đây là ca biên output dựa trên giả định A7; để mở rộng nếu còn thời gian |
 | FR09-BVA-17 | API | Như BVA-16 |
 | FR09-BVA-18 | API | Như BVA-16 |
+
+## S2. File dữ liệu
+
+File: [`data/fr09.json`](../data/fr09.json) — 24 phần tử (`id`, `input`, `expected`, `note`). Script chỉ đọc file này.
+
+| Trường | Ý nghĩa |
+|---|---|
+| `input.code` | Mã nhập vào ô "Mã Giảm Giá" (giữ nguyên chữ thường / khoảng trắng của TC) |
+| `input.productPrice` | Giá sản phẩm được tạo bằng API ở bước chuẩn bị; giỏ hàng có đúng 1 sản phẩm này, nên tổng đơn = giá này |
+| `input.coupon` | Coupon cần tạo trước bằng API (biên ngày); `expiredOffsetDays` tính từ ngày chạy test |
+| `input.placeOrderFirst` | `true`: đặt hàng với mã này trước, rồi mua lại và áp mã lần nữa (EP-20) |
+| `expected.outcome` | `applied` / `rejected` / `applyDisabled` |
+| `expected.discount`, `final`, `tolerance` | Số tiền giảm và thành tiền theo công thức đặc tả, sai số cho phép 0,5 ₫ |
+| `expected.reasonPattern` | Regex (không phân biệt hoa thường) mà thông báo từ chối phải khớp. Đặc tả không quy định câu chữ, nên chỉ kiểm từ khóa của lý do |
+| `expected.displayFormat` | `thousands-separator-dong`: số tiền hiển thị có phân cách hàng nghìn và ký hiệu ₫ (FR-21) |
+| `note` | Căn cứ đặc tả / giả định, bug HW02 liên quan |
+
+Lưu ý: EP-07 và EP-08 ở HW02 chỉ kiểm "áp dụng thành công", nên được Pass. Ở HW04, `expected` kiểm thêm số tiền theo công thức, nên dự kiến sẽ Fail do bug #96.
