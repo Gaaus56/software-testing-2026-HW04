@@ -103,3 +103,19 @@ Ghi chú khi viết:
 - `parseMoney` đổi chuỗi hiển thị (định dạng `toLocaleString` en-US: `30,000.1 ₫`) thành số để so với `expected` trong file dữ liệu.
 
 Đã chạy thử trên Chromium, Firefox, WebKit (áp VIP100 cho đơn 400.000 → 100,000 ₫ / 300,000 ₫).
+
+## S4. Script do AI sinh (bản đầu)
+
+File: [`tests/fr09-coupon.spec.ts`](../tests/fr09-coupon.spec.ts) — commit `[B-FR09][S4]` là **bản gốc AI sinh**, chưa chạy, chưa review.
+
+- **Data-driven:** đọc `data/fr09.json`, 24 test. Mỗi test: reset backend → tạo sản phẩm đúng giá `productPrice` (và coupon nếu có) bằng API → đăng nhập qua UI → thêm vào giỏ → Checkout → áp mã.
+- **Kiểu assertion:**
+
+| Kiểu | Ví dụ trong script | Dùng cho |
+|---|---|---|
+| Trạng thái phần tử | `expect(cp.applyButton).toBeDisabled()` | Ô mã trống |
+| Số lượng phần tử | `expect(cp.savingAmount).toHaveCount(0)` | Mã bị từ chối thì không có dòng "Tiết kiệm" |
+| Nội dung | `expect(cp.couponSection).toContainText(/hết hạn/i)` | Lý do từ chối |
+| So số tiền có sai số | `expect(Math.abs(discount - expected)).toBeLessThanOrEqual(0.5)` | Công thức percent / fixed |
+| Định dạng hiển thị (regex) | `expect(cp.finalAmount).toHaveText(/^\d{1,3}([.,]\d{3})+ ₫$/)` | FR-21 |
+| URL | `expect(page).toHaveURL(...)` | Đăng nhập xong |
