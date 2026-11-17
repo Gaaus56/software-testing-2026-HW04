@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Kết quả chạy thô của Playwright (trace, video). Báo cáo HTML được giữ ở reports/
+test-results/
+playwright-report/
+blob-report/
+.cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.tmp
+*.log
+
+# Secrets
+.env
+.env.*
+
+# Prompt log và phụ lục AI: chỉ đưa vào file zip nộp Moodle, không public
+# (đề cấm chép prompt giữa sinh viên — repo HW04 bắt buộc public)
+ai/prompt_logs/
+
+# File zip nộp bài
+*.zip
