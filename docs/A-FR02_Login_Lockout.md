@@ -81,3 +81,20 @@ File: [`pages/LoginPage.ts`](../pages/LoginPage.ts). Helper dùng chung: [`helpe
 | Response đăng nhập | `page.waitForResponse('/api/login')` trong `login()` | Phân biệt 401 (sai) và 403 (khóa) ngay trong test UI |
 
 Không dùng XPath hay class Tailwind. Đã chạy thử trên Chromium, Firefox, WebKit.
+
+## S4. Script do AI sinh (bản đầu)
+
+File: [`tests/fr02-login.spec.ts`](../tests/fr02-login.spec.ts) — commit `[A-FR02][S4]` là **bản gốc AI sinh**, chưa chạy, chưa review. Mọi sửa đổi sau đó nằm trong các commit `[A-FR02][S5]`.
+
+- **Data-driven:** đọc `data/fr02.json`, mỗi phần tử sinh một `test()` (18 test). Dữ liệu (tài khoản, số lần sai, số giây chờ, kết quả mong đợi) chỉ nằm trong file data.
+- **Thứ tự chạy:** `test.describe.configure({ mode: 'serial' })`, vì các test dùng chung bộ đếm đăng nhập sai của backend. Mỗi test bắt đầu bằng `resetBackend()`.
+- **Kiểu assertion:**
+
+| Kiểu | Ví dụ trong script | Dùng cho |
+|---|---|---|
+| URL trang | `expect(page).toHaveURL(...)` | Đăng nhập thành công / ở lại trang login |
+| Thuộc tính DOM | `expect(lp.emailInput).toHaveAttribute('type', 'email')` | Form theo FR-22 |
+| Nội dung / hiển thị | `toBeVisible()`, `toContainText(/khóa/i)`, `toHaveText(...)` | Thông báo lỗi |
+| Giá trị response bắt được | `expect(status).toBe(200)`, `toBeGreaterThanOrEqual(400)`, `toEqual(reference.body)` | 401/403, không lộ nguyên nhân |
+| Trạng thái client | `expect(token).toBeTruthy()` / `toBeNull()` | Lưu JWT |
+| Vị trí phần tử | `expect(err.y).toBeLessThan(btn.y)` | Thông báo nằm trên nút submit |
