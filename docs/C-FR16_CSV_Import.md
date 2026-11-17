@@ -64,3 +64,18 @@ Cột cuối: kết quả HW02 và kết quả dự kiến khi tự động hóa
 | FR16-BVA-11 | UI | 1 dòng hợp lệ: đã phủ bởi EP-17/EP-21 |
 | FR16-BVA-12 | UI | 2 dòng hợp lệ: trùng EP-01 |
 | FR16-BVA-16 | UI | 6 cột: cùng lớp lỗi header với BVA-15; để mở rộng |
+
+## S2. File dữ liệu
+
+- [`data/fr16.json`](../data/fr16.json) — 26 phần tử (`id`, `input`, `expected`, `note`).
+- [`data/fr16-csv/`](../data/fr16-csv/) — 26 file CSV để import, chép từ `test-data/FR16/` của HW02 (giữ nguyên từng byte: BOM, CRLF, file nhị phân).
+
+| Trường | Ý nghĩa |
+|---|---|
+| `input.file` | File sẽ import, đường dẫn tính từ `data/` |
+| `expected.added` | Số sản phẩm phải được thêm vào DB, đếm bằng `GET /api/products` trước/sau. `0` = từ chối hoặc rollback toàn bộ |
+| `expected.reasonPattern` | Regex lý do phải có trong báo cáo import (tên / giá / header / định dạng file) |
+| `expected.names`, `price` | Tên (và giá) của sản phẩm phải được lưu đúng nguyên văn |
+| `expected.importDisabled` | Nút "Import" phải bị vô hiệu (file không có dòng dữ liệu) |
+| `expected.renderedAsTextOnWeb` | Tên chứa HTML phải hiện nguyên văn trên trang chủ Web |
+| `note` | Căn cứ đặc tả / giả định, bug HW02 liên quan |

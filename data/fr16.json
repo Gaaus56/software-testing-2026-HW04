@@ -1,0 +1,302 @@
+[
+  {
+    "id": "FR16-EP-01",
+    "input": {
+      "file": "fr16-csv/FR16-EP-01_valid_2rows.csv"
+    },
+    "expected": {
+      "added": 2,
+      "names": [
+        "CSV-EP01 Ban phim",
+        "CSV-EP01 Chuot"
+      ]
+    },
+    "note": "Positive: 2 dòng hợp lệ. R1–R7"
+  },
+  {
+    "id": "FR16-EP-02",
+    "input": {
+      "file": "fr16-csv/FR16-EP-02_valid_content.txt"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "định dạng|csv|file|tệp"
+    },
+    "note": "Negative: đuôi .txt. R1. HW02 Fail → bug #105"
+  },
+  {
+    "id": "FR16-EP-03",
+    "input": {
+      "file": "fr16-csv/FR16-EP-03_fake_excel.xlsx"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "định dạng|csv|file|tệp"
+    },
+    "note": "Negative: file nhị phân .xlsx. R1. HW02 Fail → bug #105"
+  },
+  {
+    "id": "FR16-EP-04",
+    "input": {
+      "file": "fr16-csv/FR16-EP-04_wrong_header.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "header|tiêu đề|cột"
+    },
+    "note": "Negative: sai tên cột header. R2. HW02 Fail → bug #106"
+  },
+  {
+    "id": "FR16-EP-05",
+    "input": {
+      "file": "fr16-csv/FR16-EP-05_no_header.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "header|tiêu đề|cột"
+    },
+    "note": "Negative: không có header. R2. HW02 Fail → bug #106"
+  },
+  {
+    "id": "FR16-EP-06",
+    "input": {
+      "file": "fr16-csv/FR16-EP-06_quoted_comma.csv"
+    },
+    "expected": {
+      "added": 1,
+      "names": [
+        "CSV-EP06 Laptop, Pro"
+      ],
+      "price": 25000000
+    },
+    "note": "Positive: trường có dấu phẩy bọc nháy (RFC 4180). R3. HW02 Fail → bug #104"
+  },
+  {
+    "id": "FR16-EP-07",
+    "input": {
+      "file": "fr16-csv/FR16-EP-07_empty_name_middle.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "tên|name"
+    },
+    "note": "Negative: dòng giữa thiếu tên → rollback. R4, R6. HW02 Fail → bug #102"
+  },
+  {
+    "id": "FR16-EP-08",
+    "input": {
+      "file": "fr16-csv/FR16-EP-08_price_zero.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "giá|price"
+    },
+    "note": "Negative: price = 0 → rollback. R5, R6. HW02 Fail → bug #103"
+  },
+  {
+    "id": "FR16-EP-09",
+    "input": {
+      "file": "fr16-csv/FR16-EP-09_price_negative.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "giá|price"
+    },
+    "note": "Negative: price âm → rollback. HW02 Fail → bug #103"
+  },
+  {
+    "id": "FR16-EP-10",
+    "input": {
+      "file": "fr16-csv/FR16-EP-10_price_text.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "giá|price"
+    },
+    "note": "Negative: price là chữ → rollback. HW02 Fail → bug #103"
+  },
+  {
+    "id": "FR16-EP-11",
+    "input": {
+      "file": "fr16-csv/FR16-EP-11_header_only.csv"
+    },
+    "expected": {
+      "added": 0,
+      "importDisabled": true
+    },
+    "note": "Negative: chỉ có header → không import được. R7"
+  },
+  {
+    "id": "FR16-EP-16",
+    "input": {
+      "file": "fr16-csv/FR16-EP-16_escaped_quote.csv"
+    },
+    "expected": {
+      "added": 1,
+      "names": [
+        "CSV-EP16 Tai nghe \"Pro\""
+      ]
+    },
+    "note": "Positive: nháy kép escape \"\". R3. HW02 Fail → bug #104"
+  },
+  {
+    "id": "FR16-EP-17",
+    "input": {
+      "file": "fr16-csv/FR16-EP-17_utf8_bom.csv"
+    },
+    "expected": {
+      "added": 1,
+      "names": [
+        "CSV-EP17 Co BOM"
+      ]
+    },
+    "note": "Positive: file UTF-8 có BOM (giả định A3)"
+  },
+  {
+    "id": "FR16-EP-18",
+    "input": {
+      "file": "fr16-csv/FR16-EP-18_category_not_exist.csv"
+    },
+    "expected": {
+      "added": 0
+    },
+    "note": "Negative: category_id = 99 không tồn tại (giả định A6). HW02 Fail → bug #108"
+  },
+  {
+    "id": "FR16-EP-20",
+    "input": {
+      "file": "fr16-csv/FR16-EP-20_crlf.csv"
+    },
+    "expected": {
+      "added": 2,
+      "names": [
+        "CSV-EP20 CRLF 1",
+        "CSV-EP20 CRLF 2"
+      ]
+    },
+    "note": "Positive: xuống dòng CRLF, tên không dính \\r"
+  },
+  {
+    "id": "FR16-EP-21",
+    "input": {
+      "file": "fr16-csv/FR16-EP-21_html_name.csv"
+    },
+    "expected": {
+      "added": 1,
+      "names": [
+        "<b>CSV-EP21 Bold</b>"
+      ],
+      "renderedAsTextOnWeb": true
+    },
+    "note": "Positive (bảo mật): tên chứa HTML hiển thị nguyên văn trên Web. SEC-04"
+  },
+  {
+    "id": "FR16-BVA-01",
+    "input": {
+      "file": "fr16-csv/FR16-BVA-01_price_-0.01.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "giá|price"
+    },
+    "note": "Biên price = −0,01. R5. HW02 Fail → bug #103"
+  },
+  {
+    "id": "FR16-BVA-02",
+    "input": {
+      "file": "fr16-csv/FR16-BVA-02_price_0.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "giá|price"
+    },
+    "note": "Biên price = 0. R5. HW02 Fail → bug #103"
+  },
+  {
+    "id": "FR16-BVA-03",
+    "input": {
+      "file": "fr16-csv/FR16-BVA-03_price_0.01.csv"
+    },
+    "expected": {
+      "added": 1
+    },
+    "note": "Biên price = 0,01. R5"
+  },
+  {
+    "id": "FR16-BVA-04",
+    "input": {
+      "file": "fr16-csv/FR16-BVA-04_name_len0.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "tên|name"
+    },
+    "note": "Biên tên 0 ký tự. R4"
+  },
+  {
+    "id": "FR16-BVA-05",
+    "input": {
+      "file": "fr16-csv/FR16-BVA-05_name_len1.csv"
+    },
+    "expected": {
+      "added": 1,
+      "names": [
+        "A"
+      ]
+    },
+    "note": "Biên tên 1 ký tự. R4"
+  },
+  {
+    "id": "FR16-BVA-08",
+    "input": {
+      "file": "fr16-csv/FR16-BVA-08_name_len255.csv"
+    },
+    "expected": {
+      "added": 1
+    },
+    "note": "Biên tên 255 ký tự (giả định A5)"
+  },
+  {
+    "id": "FR16-BVA-09",
+    "input": {
+      "file": "fr16-csv/FR16-BVA-09_name_len256.csv"
+    },
+    "expected": {
+      "added": 0
+    },
+    "note": "Biên tên 256 ký tự → từ chối (giả định A5). HW02 Fail → bug #109"
+  },
+  {
+    "id": "FR16-BVA-13",
+    "input": {
+      "file": "fr16-csv/FR16-BVA-13_error_first_row.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "tên|name"
+    },
+    "note": "Biên vị trí lỗi: dòng đầu → rollback. R6. HW02 Fail → bug #102"
+  },
+  {
+    "id": "FR16-BVA-14",
+    "input": {
+      "file": "fr16-csv/FR16-BVA-14_error_last_row.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "giá|price"
+    },
+    "note": "Biên vị trí lỗi: dòng cuối → rollback. R6. HW02 Fail → bug #103"
+  },
+  {
+    "id": "FR16-BVA-15",
+    "input": {
+      "file": "fr16-csv/FR16-BVA-15_4_columns.csv"
+    },
+    "expected": {
+      "added": 0,
+      "reasonPattern": "header|tiêu đề|cột"
+    },
+    "note": "Biên số cột = 4 → báo lỗi header. R2. HW02 Fail → bug #106"
+  }
+]
