@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Gaaus56/software-testing-2026-HW04#readme",
   "devDependencies": {
-    "@playwright/test": "^1.65.1"
+    "@playwright/test": "^1.65.1",
+    "markdown-it": "^14.1.0"
   }
 }
