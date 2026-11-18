@@ -116,5 +116,6 @@ Tổng cộng 30 TC HW02 không tự động hóa (FR-02: 5, FR-09: 13, FR-16: 1
 
 ## 9. Video và Agent Skill
 
-- Video demo Task 2: _(sinh viên bổ sung link YouTube)_
-- Agent Skill + video: _(bổ sung)_
+- **Video demo Task 2:** _(link video demo)_. Quay trên FR-09, có `whoami` + `hostname`; chạy 3 trình duyệt ra `reports-video/` (không đè báo cáo chính thức; kết quả 16 Pass / 8 Fail trên cả 3 trình duyệt, giống lần chạy chính thức); mở báo cáo "Run by: 23120017"; kể chỗ sửa script AI (bỏ `mode: 'serial'`, chờ kết quả trước khi kiểm `toHaveCount(0)`).
+- **Agent Skill:** [`playwright-data-driven`](../.claude/skills/playwright-data-driven/SKILL.md) và [`ai-audit-log`](../.claude/skills/ai-audit-log/SKILL.md); mô tả và thiết kế ở [Agent_Skill.md](Agent_Skill.md).
+- **Video Agent Skill:** _(link video skill)_. Dùng skill end-to-end trên FR-05 Tìm kiếm sản phẩm, nhánh [`skill-demo`](https://github.com/Gaaus56/software-testing-2026-HW04/tree/skill-demo).

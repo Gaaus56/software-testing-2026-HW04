@@ -15,12 +15,12 @@ Dùng lại 3 feature Web đã chọn ở HW02 (repo HW02: `software-testing-202
 
 | No. | Criteria | Grade | Self-Assessed Grade |
 |---|---|---|---|
-| 1 | Task 1 – Feature A (FR-02) | 25 | |
-| 1 | Task 1 – Feature B (FR-09) | 25 | |
-| 1 | Task 1 – Feature C (FR-16) | 25 | |
-| 2 | Task 2 — Demo video | 15 | |
-| 3 | Agent Skills | 10 | |
-| | **Total** | **100** | |
+| 1 | Task 1 – Feature A (FR-02) | 25 | 22 |
+| 1 | Task 1 – Feature B (FR-09) | 25 | 22 |
+| 1 | Task 1 – Feature C (FR-16) | 25 | 22 |
+| 2 | Task 2 — Demo video | 15 | 13 |
+| 3 | Agent Skills | 10 | 8 |
+| | **Total** | **100** | **87** |
 
 ## Test summary
 
@@ -37,6 +37,28 @@ Dùng lại 3 feature Web đã chọn ở HW02 (repo HW02: `software-testing-202
 
 ## Liên kết
 
-- Repo public: https://github.com/Gaaus56/software-testing-2026-HW04
-- Video demo (YouTube unlisted): _(chưa có)_
-- Video Agent Skill: _(chưa có)_
+- Repo public: https://github.com/Gaaus56/software-testing-2026-HW04 (nhánh `main`: bài nộp; nhánh `skill-demo`: kết quả demo Agent Skill trên FR-05)
+- Video demo Task 2 (YouTube unlisted): _(link video demo)_
+- Video Agent Skill (YouTube unlisted): _(link video skill)_
+
+## Tài liệu nộp
+
+| Yêu cầu (đề mục 14) | File |
+|---|---|
+| Report chính (MD + PDF): automation + review / gap analysis | [`docs/HW04_Report.md`](docs/HW04_Report.md), report từng feature [`docs/A-FR02_Login_Lockout.md`](docs/A-FR02_Login_Lockout.md), [`docs/B-FR09_Coupon.md`](docs/B-FR09_Coupon.md), [`docs/C-FR16_CSV_Import.md`](docs/C-FR16_CSV_Import.md); PDF trong [`pdf/`](pdf/) |
+| Repo public (script, data, báo cáo HTML) | `tests/`, `pages/`, `helpers/`, `data/`, `reports/` |
+| Báo cáo HTML nhiều trình duyệt | [`reports/`](reports/): 9 thư mục `<FR>-<chromium\|firefox\|webkit>/index.html` |
+| Link video demo | Mục Liên kết ở trên |
+| AI Critique + AI Audit Report (MD + PDF) | [`ai/AI_Critique.md`](ai/AI_Critique.md), [`ai/AI_Audit_Report.md`](ai/AI_Audit_Report.md), form [`ai/forms/AI-03_Disclosure_Form.md`](ai/forms/AI-03_Disclosure_Form.md); prompt log `ai/prompt_logs/` (chỉ có trong file zip) |
+| Git commit log | [`git_log.txt`](git_log.txt) |
+| Bug report + ảnh trang GitHub Issues | [`docs/Bug_Report.md`](docs/Bug_Report.md), [`bugs/issue-screenshots/`](bugs/issue-screenshots/) |
+| Agent Skill | [`.claude/skills/`](.claude/skills/), mô tả [`docs/Agent_Skill.md`](docs/Agent_Skill.md) |
+
+## Chạy lại bộ test
+
+```powershell
+npm install
+npx playwright install chromium firefox webkit
+# EShop: chạy frontend-web (:5173) rồi frontend-admin (:5174); backend do test tự khởi động lại
+npm run test:reports            # 3 feature × 3 trình duyệt → reports/<FR>-<browser>/
+```
