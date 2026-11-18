@@ -1,0 +1,1325 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/fr09-coupon.spec.ts",
+      "--project=chromium"
+    ],
+    "configFile": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\playwright.config.ts",
+    "rootDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23120017",
+      "Run at (ISO)": "2026-11-18T02:56:19.802Z",
+      "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T02:56:19.802Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T02:56:19.802Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T02:56:19.802Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T02:56:19.802Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests",
+        "snapshotDir": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "screenshot": "only-on-failure",
+          "trace": "off",
+          "video": "off",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/FR09-chromium",
+          "open": "never",
+          "title": "EShop HW04 — Run by: 23120017 — 2026-11-18T02:56:19.802Z"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/FR09-chromium/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr09-coupon.spec.ts",
+      "file": "fr09-coupon.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FR09-EP-01: Positive, percent: 1.000.000 × 10 % = 100.000. C1–C5. HW02 Fail → bug #96",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2027,
+                  "error": {
+                    "message": "Error: Tiền giảm -9000000, mong đợi 100000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m9100000\u001b[39m",
+                    "stack": "Error: Tiền giảm -9000000, mong đợi 100000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m9100000\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:71:114",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                      "column": 114,
+                      "line": 71
+                    },
+                    "snippet": " \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m tol \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mtolerance \u001b[33m??\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 114,
+                        "line": 71
+                      },
+                      "message": "Error: Tiền giảm -9000000, mong đợi 100000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m9100000\u001b[39m\n\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m tol \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mtolerance \u001b[33m??\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:71:114\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 103,
+                        "line": 72
+                      },
+                      "message": "Error: Thành tiền 10000000, mong đợi 900000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m9100000\u001b[39m\n\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n \u001b[90m 75 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(cp\u001b[33m.\u001b[39msavingAmount\u001b[33m,\u001b[39m \u001b[32m'Tiền giảm hiển thị dạng 40,000 ₫'\u001b[39m)\u001b[33m.\u001b[39mtoHaveText(\u001b[35m/^\\d{1,3}([.,]\\d{3})+ ₫$/\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:72:103\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:20.202Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-EP-01-Pos-7b0a8-00-C1–C5-HW02-Fail-→-bug-96-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-EP-01-Pos-7b0a8-00-C1–C5-HW02-Fail-→-bug-96-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                    "column": 114,
+                    "line": 71
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-d5707c532aa01e2b1bf5",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-02: Positive, fixed 50.000. R-fixed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1967,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:29.603Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-738a7328c70966bee39d",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-03: Positive, fixed 100.000. R-fixed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2006,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:31.654Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-de4eeff48ca5a9b5d2fc",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-04: Negative: mã không tồn tại. C1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1942,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:33.667Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-27fe45228294b1480fc8",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-06: Negative: ô mã trống → không áp dụng được",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1944,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:35.618Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-7e79e89cfc19346cbfc5",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-07: Positive: chữ thường được xử lý như SAVE10 (giả định A6). Số tiền theo công thức → dự kiến Fail vì bug #96",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1916,
+                  "error": {
+                    "message": "Error: Tiền giảm -3600000, mong đợi 40000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m",
+                    "stack": "Error: Tiền giảm -3600000, mong đợi 40000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:71:114",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                      "column": 114,
+                      "line": 71
+                    },
+                    "snippet": " \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m tol \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mtolerance \u001b[33m??\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 114,
+                        "line": 71
+                      },
+                      "message": "Error: Tiền giảm -3600000, mong đợi 40000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m\n\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m tol \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mtolerance \u001b[33m??\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:71:114\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 103,
+                        "line": 72
+                      },
+                      "message": "Error: Thành tiền 4000000, mong đợi 360000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m\n\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n \u001b[90m 75 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(cp\u001b[33m.\u001b[39msavingAmount\u001b[33m,\u001b[39m \u001b[32m'Tiền giảm hiển thị dạng 40,000 ₫'\u001b[39m)\u001b[33m.\u001b[39mtoHaveText(\u001b[35m/^\\d{1,3}([.,]\\d{3})+ ₫$/\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:72:103\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:37.568Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-EP-07-Pos-08355-ức-→-dự-kiến-Fail-vì-bug-96-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-EP-07-Pos-08355-ức-→-dự-kiến-Fail-vì-bug-96-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                    "column": 114,
+                    "line": 71
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-e3fa61f5b825cb05854e",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-08: Positive: bỏ khoảng trắng đầu/cuối (A6). Dự kiến Fail vì bug #96",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2015,
+                  "error": {
+                    "message": "Error: Tiền giảm -3600000, mong đợi 40000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m",
+                    "stack": "Error: Tiền giảm -3600000, mong đợi 40000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:71:114",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                      "column": 114,
+                      "line": 71
+                    },
+                    "snippet": " \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m tol \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mtolerance \u001b[33m??\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 114,
+                        "line": 71
+                      },
+                      "message": "Error: Tiền giảm -3600000, mong đợi 40000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m\n\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m tol \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mtolerance \u001b[33m??\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:71:114\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 103,
+                        "line": 72
+                      },
+                      "message": "Error: Thành tiền 4000000, mong đợi 360000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m\n\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n \u001b[90m 75 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(cp\u001b[33m.\u001b[39msavingAmount\u001b[33m,\u001b[39m \u001b[32m'Tiền giảm hiển thị dạng 40,000 ₫'\u001b[39m)\u001b[33m.\u001b[39mtoHaveText(\u001b[35m/^\\d{1,3}([.,]\\d{3})+ ₫$/\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:72:103\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:39.906Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-EP-08-Pos-8dca2-i-A6-Dự-kiến-Fail-vì-bug-96-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-EP-08-Pos-8dca2-i-A6-Dự-kiến-Fail-vì-bug-96-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                    "column": 114,
+                    "line": 71
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-7012b2dae42a86126a32",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-09: Negative: ký tự đặc biệt/SQL. C1, SEC-05",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2075,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:42.413Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-80170864ebd421d458e2",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-10: Negative: mã hết hạn (2020-01-01). C2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1989,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:44.570Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-3907a312869fd64dee4d",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-11: Negative: tổng dưới ngưỡng 300.000. C3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1960,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:46.567Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-b41d3267bd19b1d5a0d2",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-15: Positive (GUI): hiển thị 40,000 ₫ / 360,000 ₫. FR-21. HW02 Fail → bug #96",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7000,
+                  "error": {
+                    "message": "Error: Tiền giảm -3600000, mong đợi 40000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m",
+                    "stack": "Error: Tiền giảm -3600000, mong đợi 40000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:71:114",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                      "column": 114,
+                      "line": 71
+                    },
+                    "snippet": " \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m tol \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mtolerance \u001b[33m??\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 114,
+                        "line": 71
+                      },
+                      "message": "Error: Tiền giảm -3600000, mong đợi 40000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m\n\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m tol \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mtolerance \u001b[33m??\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:71:114\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 103,
+                        "line": 72
+                      },
+                      "message": "Error: Thành tiền 4000000, mong đợi 360000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m3640000\u001b[39m\n\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n \u001b[90m 75 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(cp\u001b[33m.\u001b[39msavingAmount\u001b[33m,\u001b[39m \u001b[32m'Tiền giảm hiển thị dạng 40,000 ₫'\u001b[39m)\u001b[33m.\u001b[39mtoHaveText(\u001b[35m/^\\d{1,3}([.,]\\d{3})+ ₫$/\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:72:103\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 78,
+                        "line": 75
+                      },
+                      "message": "Error: Tiền giảm hiển thị dạng 40,000 ₫\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Mã Giảm Giá', { exact: true }).locator('..').getByText(/^Tiết kiệm:/).getByRole('strong')\nExpected pattern: \u001b[32m/^\\d{1,3}([.,]\\d{3})+ ₫$/\u001b[39m\nReceived string:  \u001b[31m\"-3,600,000 ₫\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Tiền giảm hiển thị dạng 40,000 ₫ getByText('Mã Giảm Giá', { exact: true }).locator('..').getByText(/^Tiết kiệm:/).getByRole('strong') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Mã Giảm Giá', { exact: true }).locator('..').getByText(/^Tiết kiệm:/).getByRole('strong')\u001b[22m\n\u001b[2m    14 × locator resolved to <strong>-3,600,000 ₫</strong>\u001b[22m\n\u001b[2m       - unexpected value \"-3,600,000 ₫\"\u001b[22m\n\n\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 75 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(cp\u001b[33m.\u001b[39msavingAmount\u001b[33m,\u001b[39m \u001b[32m'Tiền giảm hiển thị dạng 40,000 ₫'\u001b[39m)\u001b[33m.\u001b[39mtoHaveText(\u001b[35m/^\\d{1,3}([.,]\\d{3})+ ₫$/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 76 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(cp\u001b[33m.\u001b[39mfinalAmount\u001b[33m,\u001b[39m \u001b[32m'Thành tiền hiển thị dạng 360,000 ₫'\u001b[39m)\u001b[33m.\u001b[39mtoHaveText(\u001b[35m/^\\d{1,3}([.,]\\d{3})+ ₫$/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 77 |\u001b[39m     }\n \u001b[90m 78 |\u001b[39m   })\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:75:78\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:48.534Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-EP-15-Pos-b395e--₫-FR-21-HW02-Fail-→-bug-96-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-EP-15-Pos-b395e--₫-FR-21-HW02-Fail-→-bug-96-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                    "column": 114,
+                    "line": 71
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-7c2f2cb023245d7ce914",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-EP-20: Negative (E2E): đã đặt hàng với SAVE10 (1/1 lượt) → áp lại bị từ chối. C5",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2456,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:55.945Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-f84548515f31af78fb02",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-01: Biên min − 1. C3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:56:58.485Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-23b16d26a52290e974ce",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-02: Biên = min (>=). C3. HW02 Fail → bug #97",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7040,
+                  "error": {
+                    "message": "Error: Mã phải được áp dụng\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Mã Giảm Giá', { exact: true }).locator('..')\nExpected pattern: \u001b[32m/thành công/i\u001b[39m\nReceived string:  \u001b[31m\"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Mã phải được áp dụng getByText('Mã Giảm Giá', { exact: true }).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Mã Giảm Giá', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mb-6 p-4 bg-gray-50 border rounded\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[22m\n",
+                    "stack": "Error: Mã phải được áp dụng\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Mã Giảm Giá', { exact: true }).locator('..')\nExpected pattern: \u001b[32m/thành công/i\u001b[39m\nReceived string:  \u001b[31m\"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Mã phải được áp dụng getByText('Mã Giảm Giá', { exact: true }).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Mã Giảm Giá', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mb-6 p-4 bg-gray-50 border rounded\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[22m\n\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:65:60",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                      "column": 60,
+                      "line": 65
+                    },
+                    "snippet": " \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m     \u001b[90m// applied: kiểm thông báo thành công trước để khi Fail, báo cáo hiện nguyên văn lý do bị từ chối\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39mcouponSection\u001b[33m,\u001b[39m \u001b[32m'Mã phải được áp dụng'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[35m/thành công/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39msavingAmount)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m     \u001b[36mconst\u001b[39m discount \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39msavingAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m     \u001b[36mconst\u001b[39m final \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39mfinalAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 60,
+                        "line": 65
+                      },
+                      "message": "Error: Mã phải được áp dụng\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Mã Giảm Giá', { exact: true }).locator('..')\nExpected pattern: \u001b[32m/thành công/i\u001b[39m\nReceived string:  \u001b[31m\"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Mã phải được áp dụng getByText('Mã Giảm Giá', { exact: true }).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Mã Giảm Giá', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mb-6 p-4 bg-gray-50 border rounded\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[22m\n\n\n \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m     \u001b[90m// applied: kiểm thông báo thành công trước để khi Fail, báo cáo hiện nguyên văn lý do bị từ chối\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39mcouponSection\u001b[33m,\u001b[39m \u001b[32m'Mã phải được áp dụng'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[35m/thành công/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39msavingAmount)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m     \u001b[36mconst\u001b[39m discount \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39msavingAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m     \u001b[36mconst\u001b[39m final \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39mfinalAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:65:60\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:00.449Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-BVA-02-Biên-min-C3-HW02-Fail-→-bug-97-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-BVA-02-Biên-min-C3-HW02-Fail-→-bug-97-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                    "column": 60,
+                    "line": 65
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-247010ddf817613f8e66",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-03: Biên min + 1; sai số làm tròn ≤ 0,5 (A8). HW02 Fail → bug #96",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2093,
+                  "error": {
+                    "message": "Error: Tiền giảm -2700009, mong đợi 30000.1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m2730009.1\u001b[39m",
+                    "stack": "Error: Tiền giảm -2700009, mong đợi 30000.1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m2730009.1\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:71:114",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                      "column": 114,
+                      "line": 71
+                    },
+                    "snippet": " \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m tol \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mtolerance \u001b[33m??\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 114,
+                        "line": 71
+                      },
+                      "message": "Error: Tiền giảm -2700009, mong đợi 30000.1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m2730009.1\u001b[39m\n\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m tol \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mtolerance \u001b[33m??\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:71:114\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 103,
+                        "line": 72
+                      },
+                      "message": "Error: Thành tiền 3000010, mong đợi 270000.9\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0.5\u001b[39m\nReceived:    \u001b[31m2730009.1\u001b[39m\n\n \u001b[90m 70 |\u001b[39m     \u001b[90m// soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 71 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(discount \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mdiscount\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Tiền giảm ${discount}, mong đợi ${expected.discount}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 72 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(final \u001b[33m-\u001b[39m expected\u001b[33m.\u001b[39mfinal\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`Thành tiền ${final}, mong đợi ${expected.final}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tol)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mdisplayFormat \u001b[33m===\u001b[39m \u001b[32m'thousands-separator-dong'\u001b[39m) {\n \u001b[90m 75 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(cp\u001b[33m.\u001b[39msavingAmount\u001b[33m,\u001b[39m \u001b[32m'Tiền giảm hiển thị dạng 40,000 ₫'\u001b[39m)\u001b[33m.\u001b[39mtoHaveText(\u001b[35m/^\\d{1,3}([.,]\\d{3})+ ₫$/\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:72:103\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:07.911Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-BVA-03-Bi-f80dc-≤-0-5-A8-HW02-Fail-→-bug-96-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-BVA-03-Bi-f80dc-≤-0-5-A8-HW02-Fail-→-bug-96-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                    "column": 114,
+                    "line": 71
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-224fcb1bd61915963309",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-04: Biên min − 1. C3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2095,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:10.490Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-8899c0b0569714740178",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-05: Biên = min. C3. HW02 Fail → bug #97",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7025,
+                  "error": {
+                    "message": "Error: Mã phải được áp dụng\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Mã Giảm Giá', { exact: true }).locator('..')\nExpected pattern: \u001b[32m/thành công/i\u001b[39m\nReceived string:  \u001b[31m\"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 500,000 ₫ để áp dụng mã này\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Mã phải được áp dụng getByText('Mã Giảm Giá', { exact: true }).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Mã Giảm Giá', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mb-6 p-4 bg-gray-50 border rounded\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 500,000 ₫ để áp dụng mã này\"\u001b[22m\n",
+                    "stack": "Error: Mã phải được áp dụng\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Mã Giảm Giá', { exact: true }).locator('..')\nExpected pattern: \u001b[32m/thành công/i\u001b[39m\nReceived string:  \u001b[31m\"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 500,000 ₫ để áp dụng mã này\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Mã phải được áp dụng getByText('Mã Giảm Giá', { exact: true }).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Mã Giảm Giá', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mb-6 p-4 bg-gray-50 border rounded\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 500,000 ₫ để áp dụng mã này\"\u001b[22m\n\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:65:60",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                      "column": 60,
+                      "line": 65
+                    },
+                    "snippet": " \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m     \u001b[90m// applied: kiểm thông báo thành công trước để khi Fail, báo cáo hiện nguyên văn lý do bị từ chối\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39mcouponSection\u001b[33m,\u001b[39m \u001b[32m'Mã phải được áp dụng'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[35m/thành công/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39msavingAmount)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m     \u001b[36mconst\u001b[39m discount \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39msavingAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m     \u001b[36mconst\u001b[39m final \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39mfinalAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 60,
+                        "line": 65
+                      },
+                      "message": "Error: Mã phải được áp dụng\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Mã Giảm Giá', { exact: true }).locator('..')\nExpected pattern: \u001b[32m/thành công/i\u001b[39m\nReceived string:  \u001b[31m\"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 500,000 ₫ để áp dụng mã này\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Mã phải được áp dụng getByText('Mã Giảm Giá', { exact: true }).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Mã Giảm Giá', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mb-6 p-4 bg-gray-50 border rounded\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 500,000 ₫ để áp dụng mã này\"\u001b[22m\n\n\n \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m     \u001b[90m// applied: kiểm thông báo thành công trước để khi Fail, báo cáo hiện nguyên văn lý do bị từ chối\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39mcouponSection\u001b[33m,\u001b[39m \u001b[32m'Mã phải được áp dụng'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[35m/thành công/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39msavingAmount)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m     \u001b[36mconst\u001b[39m discount \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39msavingAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m     \u001b[36mconst\u001b[39m final \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39mfinalAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:65:60\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:12.668Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-BVA-05-Biên-min-C3-HW02-Fail-→-bug-97-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-BVA-05-Biên-min-C3-HW02-Fail-→-bug-97-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                    "column": 60,
+                    "line": 65
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-f38becae75102601c251",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-06: Biên min + 1. C3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2097,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:20.103Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-f96d2b02c3e86924dfd4",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-07: Biên min − 1. C3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2107,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:22.284Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-b02f43a0f65be0fa5efc",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-08: Biên = min. C3. HW02 Fail → bug #97",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7038,
+                  "error": {
+                    "message": "Error: Mã phải được áp dụng\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Mã Giảm Giá', { exact: true }).locator('..')\nExpected pattern: \u001b[32m/thành công/i\u001b[39m\nReceived string:  \u001b[31m\"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Mã phải được áp dụng getByText('Mã Giảm Giá', { exact: true }).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Mã Giảm Giá', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mb-6 p-4 bg-gray-50 border rounded\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[22m\n",
+                    "stack": "Error: Mã phải được áp dụng\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Mã Giảm Giá', { exact: true }).locator('..')\nExpected pattern: \u001b[32m/thành công/i\u001b[39m\nReceived string:  \u001b[31m\"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Mã phải được áp dụng getByText('Mã Giảm Giá', { exact: true }).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Mã Giảm Giá', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mb-6 p-4 bg-gray-50 border rounded\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[22m\n\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:65:60",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                      "column": 60,
+                      "line": 65
+                    },
+                    "snippet": " \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m     \u001b[90m// applied: kiểm thông báo thành công trước để khi Fail, báo cáo hiện nguyên văn lý do bị từ chối\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39mcouponSection\u001b[33m,\u001b[39m \u001b[32m'Mã phải được áp dụng'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[35m/thành công/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39msavingAmount)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m     \u001b[36mconst\u001b[39m discount \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39msavingAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m     \u001b[36mconst\u001b[39m final \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39mfinalAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                        "column": 60,
+                        "line": 65
+                      },
+                      "message": "Error: Mã phải được áp dụng\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Mã Giảm Giá', { exact: true }).locator('..')\nExpected pattern: \u001b[32m/thành công/i\u001b[39m\nReceived string:  \u001b[31m\"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Mã phải được áp dụng getByText('Mã Giảm Giá', { exact: true }).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Mã Giảm Giá', { exact: true }).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mb-6 p-4 bg-gray-50 border rounded\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mã Giảm GiáÁp dụngĐơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này\"\u001b[22m\n\n\n \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m     \u001b[90m// applied: kiểm thông báo thành công trước để khi Fail, báo cáo hiện nguyên văn lý do bị từ chối\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39mcouponSection\u001b[33m,\u001b[39m \u001b[32m'Mã phải được áp dụng'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[35m/thành công/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cp\u001b[33m.\u001b[39msavingAmount)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m     \u001b[36mconst\u001b[39m discount \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39msavingAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m     \u001b[36mconst\u001b[39m final \u001b[33m=\u001b[39m parseMoney(\u001b[36mawait\u001b[39m cp\u001b[33m.\u001b[39mfinalAmount\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts:65:60\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:24.399Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-BVA-08-Biên-min-C3-HW02-Fail-→-bug-97-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr09-coupon-FR09-BVA-08-Biên-min-C3-HW02-Fail-→-bug-97-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr09-coupon.spec.ts",
+                    "column": 60,
+                    "line": 65
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-ca070f74135cc3ee7764",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-09: Biên min + 1. C3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2190,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:31.852Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-c3a4a48b155f1c5f75b7",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-11: Biên ngày: hạn = hôm qua. C2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2275,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:34.133Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-8c9e3ae1dd52c016bc2e",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-12: Biên ngày: hạn = hôm nay → hết hạn (giả định A1: \"trước\" là nghiêm ngặt). C2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2159,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:36.416Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-159109edbc3f605d18d8",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "title": "FR09-BVA-13: Biên ngày: hạn = ngày mai → áp được. C2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2177,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:57:38.581Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a554c4a113fbe72ba729-883ce639007ea1711dd3",
+          "file": "fr09-coupon.spec.ts",
+          "line": 27,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-18T02:56:19.805Z",
+    "duration": 81020.239,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,1124 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/fr02-login.spec.ts",
+      "--project=chromium"
+    ],
+    "configFile": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\playwright.config.ts",
+    "rootDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23120017",
+      "Run at (ISO)": "2026-11-18T02:47:31.212Z",
+      "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T02:47:31.212Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T02:47:31.212Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T02:47:31.212Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T02:47:31.212Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests",
+        "snapshotDir": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "screenshot": "only-on-failure",
+          "trace": "off",
+          "video": "off",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/FR02-chromium",
+          "open": "never",
+          "title": "EShop HW04 — Run by: 23120017 — 2026-11-18T02:47:31.212Z"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/FR02-chromium/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr02-login.spec.ts",
+      "file": "fr02-login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FR02-EP-01: Positive. Đặc tả R1, R5, R6",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1798,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:47:31.638Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-237494c8f53de26dbe72",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-02: Negative: mật khẩu sai. R2, R4",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7387,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:47:33.536Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-87cf15790e7617cdadbb",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-03: Negative: email chưa đăng ký; thông báo phải giống EP-02 (không lộ nguyên nhân). R4, A6",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1791,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:47:40.932Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-3f4a7454e75151f8509b",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-04: Negative: email sai định dạng, trình duyệt phải chặn do type=email. R7. HW02 Fail → bug #93",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1883,
+                  "error": {
+                    "message": "Error: Trình duyệt phải chặn submit, không gửi POST /api/login\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m{\"_guid\": \"response@cf958c6cc048b28d9739430cf8b90307\", \"_type\": \"Response\"}\u001b[39m",
+                    "stack": "Error: Trình duyệt phải chặn submit, không gửi POST /api/login\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m{\"_guid\": \"response@cf958c6cc048b28d9739430cf8b90307\", \"_type\": \"Response\"}\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:84:79",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                      "column": 79,
+                      "line": 84
+                    },
+                    "snippet": " \u001b[90m 82 |\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mloginRequestSent \u001b[33m===\u001b[39m \u001b[36mfalse\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 84 |\u001b[39m       expect(resp\u001b[33m,\u001b[39m \u001b[32m'Trình duyệt phải chặn submit, không gửi POST /api/login'\u001b[39m)\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 85 |\u001b[39m       \u001b[36mreturn\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 86 |\u001b[39m     }\n \u001b[90m 87 |\u001b[39m     expect(resp\u001b[33m,\u001b[39m \u001b[32m'Phải có response của POST /api/login'\u001b[39m)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 79,
+                        "line": 84
+                      },
+                      "message": "Error: Trình duyệt phải chặn submit, không gửi POST /api/login\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m{\"_guid\": \"response@cf958c6cc048b28d9739430cf8b90307\", \"_type\": \"Response\"}\u001b[39m\n\n \u001b[90m 82 |\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mloginRequestSent \u001b[33m===\u001b[39m \u001b[36mfalse\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 84 |\u001b[39m       expect(resp\u001b[33m,\u001b[39m \u001b[32m'Trình duyệt phải chặn submit, không gửi POST /api/login'\u001b[39m)\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 85 |\u001b[39m       \u001b[36mreturn\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 86 |\u001b[39m     }\n \u001b[90m 87 |\u001b[39m     expect(resp\u001b[33m,\u001b[39m \u001b[32m'Phải có response của POST /api/login'\u001b[39m)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:84:79\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:47:42.733Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-EP-04-Nega-f5957-email-R7-HW02-Fail-→-bug-93-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-EP-04-Nega-f5957-email-R7-HW02-Fail-→-bug-93-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                    "column": 79,
+                    "line": 84
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-2a029b8a105e0500f75b",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-05: Negative: để trống cả hai ô. R1, FR-22",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4669,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:47:45.139Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-97026d0fa4c99a93e4e2",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-06: Negative: mật khẩu sai hoa/thường. R2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1606,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:47:49.918Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-e57046c0aabea9ec114d",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-07: Negative: đang khóa thì mật khẩu đúng vẫn bị chặn. R3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1822,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:47:51.537Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-0b99c5ebf002624ef225",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-08: Positive: request cần xác thực mang header Authorization. R6",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1589,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:47:53.369Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-e84eb5f182b90a9d6401",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-09: Negative (GUI): thuộc tính form. R7, R8, FR-22. HW02 Fail → bug #92, #93, #95",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 21597,
+                  "error": {
+                    "message": "Error: Ô email phải có type=\"email\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('form').getByText(/^(Username|Email)\\s*\\*?$/).locator('..').locator('input')\nExpected: \u001b[32m\"email\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Ô email phải có type=\"email\" locator('form').getByText(/^(Username|Email)\\s*\\*?$/).locator('..').locator('input') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('form').getByText(/^(Username|Email)\\s*\\*?$/).locator('..').locator('input')\u001b[22m\n\u001b[2m    14 × locator resolved to <input value=\"\" required=\"\" type=\"text\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"text\"\u001b[22m\n",
+                    "stack": "Error: Ô email phải có type=\"email\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('form').getByText(/^(Username|Email)\\s*\\*?$/).locator('..').locator('input')\nExpected: \u001b[32m\"email\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Ô email phải có type=\"email\" locator('form').getByText(/^(Username|Email)\\s*\\*?$/).locator('..').locator('input') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('form').getByText(/^(Username|Email)\\s*\\*?$/).locator('..').locator('input')\u001b[22m\n\u001b[2m    14 × locator resolved to <input value=\"\" required=\"\" type=\"text\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"text\"\u001b[22m\n\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:52:101",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                      "column": 101,
+                      "line": 52
+                    },
+                    "snippet": " \u001b[90m 50 |\u001b[39m     \u001b[90m// expect.soft: kiểm hết mọi thuộc tính rồi mới báo Fail, để không bỏ sót lỗi phía sau lỗi đầu tiên\u001b[39m\n \u001b[90m 51 |\u001b[39m     \u001b[36mif\u001b[39m (input\u001b[33m.\u001b[39mlogin \u001b[33m===\u001b[39m \u001b[36mnull\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39memailInputType) \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39memailInput\u001b[33m,\u001b[39m \u001b[32m'Ô email phải có type=\"email\"'\u001b[39m)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'type'\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m.\u001b[39memailInputType)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mpasswordInputType) \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39mpasswordInput\u001b[33m,\u001b[39m \u001b[32m'Ô mật khẩu phải có type=\"password\"'\u001b[39m)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'type'\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m.\u001b[39mpasswordInputType)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mrequiredMarkOnLabels) {\n \u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39memailLabel\u001b[33m,\u001b[39m \u001b[32m'Nhãn email phải có dấu *'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'*'\u001b[39m)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 101,
+                        "line": 52
+                      },
+                      "message": "Error: Ô email phải có type=\"email\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('form').getByText(/^(Username|Email)\\s*\\*?$/).locator('..').locator('input')\nExpected: \u001b[32m\"email\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Ô email phải có type=\"email\" locator('form').getByText(/^(Username|Email)\\s*\\*?$/).locator('..').locator('input') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('form').getByText(/^(Username|Email)\\s*\\*?$/).locator('..').locator('input')\u001b[22m\n\u001b[2m    14 × locator resolved to <input value=\"\" required=\"\" type=\"text\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"text\"\u001b[22m\n\n\n \u001b[90m 50 |\u001b[39m     \u001b[90m// expect.soft: kiểm hết mọi thuộc tính rồi mới báo Fail, để không bỏ sót lỗi phía sau lỗi đầu tiên\u001b[39m\n \u001b[90m 51 |\u001b[39m     \u001b[36mif\u001b[39m (input\u001b[33m.\u001b[39mlogin \u001b[33m===\u001b[39m \u001b[36mnull\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39memailInputType) \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39memailInput\u001b[33m,\u001b[39m \u001b[32m'Ô email phải có type=\"email\"'\u001b[39m)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'type'\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m.\u001b[39memailInputType)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mpasswordInputType) \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39mpasswordInput\u001b[33m,\u001b[39m \u001b[32m'Ô mật khẩu phải có type=\"password\"'\u001b[39m)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'type'\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m.\u001b[39mpasswordInputType)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mrequiredMarkOnLabels) {\n \u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39memailLabel\u001b[33m,\u001b[39m \u001b[32m'Nhãn email phải có dấu *'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'*'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:52:101\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 113,
+                        "line": 53
+                      },
+                      "message": "Error: Ô mật khẩu phải có type=\"password\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('form').getByText(/^Mật khẩu\\s*\\*?$/).locator('..').locator('input')\nExpected: \u001b[32m\"password\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Ô mật khẩu phải có type=\"password\" locator('form').getByText(/^Mật khẩu\\s*\\*?$/).locator('..').locator('input') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('form').getByText(/^Mật khẩu\\s*\\*?$/).locator('..').locator('input')\u001b[22m\n\u001b[2m    14 × locator resolved to <input value=\"\" required=\"\" type=\"text\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"text\"\u001b[22m\n\n\n \u001b[90m 51 |\u001b[39m     \u001b[36mif\u001b[39m (input\u001b[33m.\u001b[39mlogin \u001b[33m===\u001b[39m \u001b[36mnull\u001b[39m) {\n \u001b[90m 52 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39memailInputType) \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39memailInput\u001b[33m,\u001b[39m \u001b[32m'Ô email phải có type=\"email\"'\u001b[39m)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'type'\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m.\u001b[39memailInputType)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mpasswordInputType) \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39mpasswordInput\u001b[33m,\u001b[39m \u001b[32m'Ô mật khẩu phải có type=\"password\"'\u001b[39m)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'type'\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m.\u001b[39mpasswordInputType)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mrequiredMarkOnLabels) {\n \u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39memailLabel\u001b[33m,\u001b[39m \u001b[32m'Nhãn email phải có dấu *'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'*'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39mpasswordLabel\u001b[33m,\u001b[39m \u001b[32m'Nhãn mật khẩu phải có dấu *'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'*'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:53:113\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 70,
+                        "line": 55
+                      },
+                      "message": "Error: Nhãn email phải có dấu *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('form').getByText(/^(Username|Email)\\s*\\*?$/)\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"Username\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Nhãn email phải có dấu * locator('form').getByText(/^(Username|Email)\\s*\\*?$/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('form').getByText(/^(Username|Email)\\s*\\*?$/)\u001b[22m\n\u001b[2m    14 × locator resolved to <label class=\"block text-gray-700 mb-2\">Username</label>\u001b[22m\n\u001b[2m       - unexpected value \"Username\"\u001b[22m\n\n\n \u001b[90m 53 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mpasswordInputType) \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39mpasswordInput\u001b[33m,\u001b[39m \u001b[32m'Ô mật khẩu phải có type=\"password\"'\u001b[39m)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'type'\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m.\u001b[39mpasswordInputType)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mrequiredMarkOnLabels) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39memailLabel\u001b[33m,\u001b[39m \u001b[32m'Nhãn email phải có dấu *'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'*'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39mpasswordLabel\u001b[33m,\u001b[39m \u001b[32m'Nhãn mật khẩu phải có dấu *'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'*'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m       }\n \u001b[90m 58 |\u001b[39m       \u001b[36mreturn\u001b[39m\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:55:70\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 76,
+                        "line": 56
+                      },
+                      "message": "Error: Nhãn mật khẩu phải có dấu *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('form').getByText(/^Mật khẩu\\s*\\*?$/)\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"Mật khẩu\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Nhãn mật khẩu phải có dấu * locator('form').getByText(/^Mật khẩu\\s*\\*?$/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('form').getByText(/^Mật khẩu\\s*\\*?$/)\u001b[22m\n\u001b[2m    14 × locator resolved to <label class=\"block text-gray-700 mb-2\">Mật khẩu</label>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu\"\u001b[22m\n\n\n \u001b[90m 54 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mrequiredMarkOnLabels) {\n \u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39memailLabel\u001b[33m,\u001b[39m \u001b[32m'Nhãn email phải có dấu *'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'*'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39mpasswordLabel\u001b[33m,\u001b[39m \u001b[32m'Nhãn mật khẩu phải có dấu *'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'*'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m       }\n \u001b[90m 58 |\u001b[39m       \u001b[36mreturn\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m     }\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:56:76\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:47:54.965Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-EP-09-Nega-5ac89-22-HW02-Fail-→-bug-92-93-95-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-EP-09-Nega-5ac89-22-HW02-Fail-→-bug-92-93-95-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                    "column": 101,
+                    "line": 52
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-25640b3351f04d23bfb0",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-10: Negative (GUI): thông báo khi tài khoản đang khóa phải nói rõ là khóa, nằm trên nút submit. R3, R8, R9. HW02 Fail → bug #94",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6803,
+                  "error": {
+                    "message": "Error: Thông báo phải cho biết tài khoản đang bị khóa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/thất bại|không đúng|khóa|lỗi/i)\nExpected pattern: \u001b[32m/khóa/i\u001b[39m\nReceived string:  \u001b[31m\"Đăng nhập thất bại. Vui lòng kiểm tra lại.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Thông báo phải cho biết tài khoản đang bị khóa getByText(/thất bại|không đúng|khóa|lỗi/i) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/thất bại|không đúng|khóa|lỗi/i)\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mt-4 rounded\">Đăng nhập thất bại. Vui lòng kiểm tra lại.</div>\u001b[22m\n\u001b[2m       - unexpected value \"Đăng nhập thất bại. Vui lòng kiểm tra lại.\"\u001b[22m\n",
+                    "stack": "Error: Thông báo phải cho biết tài khoản đang bị khóa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/thất bại|không đúng|khóa|lỗi/i)\nExpected pattern: \u001b[32m/khóa/i\u001b[39m\nReceived string:  \u001b[31m\"Đăng nhập thất bại. Vui lòng kiểm tra lại.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Thông báo phải cho biết tài khoản đang bị khóa getByText(/thất bại|không đúng|khóa|lỗi/i) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/thất bại|không đúng|khóa|lỗi/i)\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mt-4 rounded\">Đăng nhập thất bại. Vui lòng kiểm tra lại.</div>\u001b[22m\n\u001b[2m       - unexpected value \"Đăng nhập thất bại. Vui lòng kiểm tra lại.\"\u001b[22m\n\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:121:94",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                      "column": 94,
+                      "line": 121
+                    },
+                    "snippet": " \u001b[90m 119 |\u001b[39m     \u001b[90m// Hai yêu cầu giao diện độc lập (nội dung và vị trí thông báo) → soft để báo đủ cả hai\u001b[39m\n \u001b[90m 120 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39muiMessagePattern) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 121 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39merrorMessage()\u001b[33m,\u001b[39m \u001b[32m'Thông báo phải cho biết tài khoản đang bị khóa'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39muiMessagePattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 122 |\u001b[39m     }\n \u001b[90m 123 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39merrorAboveSubmit) {\n \u001b[90m 124 |\u001b[39m       \u001b[36mconst\u001b[39m err \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m lp\u001b[33m.\u001b[39merrorMessage()\u001b[33m.\u001b[39mboundingBox()\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 94,
+                        "line": 121
+                      },
+                      "message": "Error: Thông báo phải cho biết tài khoản đang bị khóa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/thất bại|không đúng|khóa|lỗi/i)\nExpected pattern: \u001b[32m/khóa/i\u001b[39m\nReceived string:  \u001b[31m\"Đăng nhập thất bại. Vui lòng kiểm tra lại.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Thông báo phải cho biết tài khoản đang bị khóa getByText(/thất bại|không đúng|khóa|lỗi/i) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/thất bại|không đúng|khóa|lỗi/i)\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mt-4 rounded\">Đăng nhập thất bại. Vui lòng kiểm tra lại.</div>\u001b[22m\n\u001b[2m       - unexpected value \"Đăng nhập thất bại. Vui lòng kiểm tra lại.\"\u001b[22m\n\n\n \u001b[90m 119 |\u001b[39m     \u001b[90m// Hai yêu cầu giao diện độc lập (nội dung và vị trí thông báo) → soft để báo đủ cả hai\u001b[39m\n \u001b[90m 120 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39muiMessagePattern) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 121 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(lp\u001b[33m.\u001b[39merrorMessage()\u001b[33m,\u001b[39m \u001b[32m'Thông báo phải cho biết tài khoản đang bị khóa'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39muiMessagePattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 122 |\u001b[39m     }\n \u001b[90m 123 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39merrorAboveSubmit) {\n \u001b[90m 124 |\u001b[39m       \u001b[36mconst\u001b[39m err \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m lp\u001b[33m.\u001b[39merrorMessage()\u001b[33m.\u001b[39mboundingBox()\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:121:94\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 77,
+                        "line": 126
+                      },
+                      "message": "Error: Thông báo lỗi phải nằm trên nút submit (FR-22)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m425\u001b[39m\nReceived:   \u001b[31m517\u001b[39m\n\n \u001b[90m 124 |\u001b[39m       \u001b[36mconst\u001b[39m err \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m lp\u001b[33m.\u001b[39merrorMessage()\u001b[33m.\u001b[39mboundingBox()\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m       \u001b[36mconst\u001b[39m btn \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m lp\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mboundingBox()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 126 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(err\u001b[33m!\u001b[39m\u001b[33m.\u001b[39my\u001b[33m,\u001b[39m \u001b[32m'Thông báo lỗi phải nằm trên nút submit (FR-22)'\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThan(btn\u001b[33m!\u001b[39m\u001b[33m.\u001b[39my)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 127 |\u001b[39m     }\n \u001b[90m 128 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mauthHeaderPrefix) {\n \u001b[90m 129 |\u001b[39m       \u001b[36mconst\u001b[39m req \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mwaitForRequest((r) \u001b[33m=>\u001b[39m r\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'/api/orders/my-orders'\u001b[39m))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:126:77\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:48:17.025Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-EP-10-Nega-c802b-R3-R8-R9-HW02-Fail-→-bug-94-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-EP-10-Nega-c802b-R3-R8-R9-HW02-Fail-→-bug-94-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                    "column": 94,
+                    "line": 121
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-2670e3d50a950d260f5e",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-11: Negative: bộ đếm về 0 sau lần đăng nhập thành công (giả định A2). HW02 Fail → bug #90",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1912,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:92:22",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                      "column": 22,
+                      "line": 92
+                    },
+                    "snippet": " \u001b[90m 90 |\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'success'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 92 |\u001b[39m       expect(status)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m`${WEB_URL}${expected.urlPath ?? '/'}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m     }\n \u001b[90m 95 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'rejected'\u001b[39m) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 22,
+                        "line": 92
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n\n \u001b[90m 90 |\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'success'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 92 |\u001b[39m       expect(status)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m`${WEB_URL}${expected.urlPath ?? '/'}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m     }\n \u001b[90m 95 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'rejected'\u001b[39m) {\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:92:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:48:24.367Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-EP-11-Nega-c594d--định-A2-HW02-Fail-→-bug-90-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-EP-11-Nega-c594d--định-A2-HW02-Fail-→-bug-90-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                    "column": 22,
+                    "line": 92
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-06a5f6c8aacde1cac003",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-EP-12: Positive: khóa test@ không ảnh hưởng tài khoản khác (giả định A3)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2060,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:48:26.825Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-e014e750833b78072ba2",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-BVA-01: Biên n = 2 lần sai → chưa khóa. R3. HW02 Fail → bug #90",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1936,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:92:22",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                      "column": 22,
+                      "line": 92
+                    },
+                    "snippet": " \u001b[90m 90 |\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'success'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 92 |\u001b[39m       expect(status)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m`${WEB_URL}${expected.urlPath ?? '/'}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m     }\n \u001b[90m 95 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'rejected'\u001b[39m) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 22,
+                        "line": 92
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n\n \u001b[90m 90 |\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'success'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 92 |\u001b[39m       expect(status)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m`${WEB_URL}${expected.urlPath ?? '/'}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m     }\n \u001b[90m 95 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'rejected'\u001b[39m) {\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:92:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:48:28.981Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-BVA-01-Biê-028be--khóa-R3-HW02-Fail-→-bug-90-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-BVA-01-Biê-028be--khóa-R3-HW02-Fail-→-bug-90-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                    "column": 22,
+                    "line": 92
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-a8c2da22095ae4f2b382",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-BVA-02: Biên n = 3 lần sai → khóa. R3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2174,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:48:31.396Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-827c2eb01a93458d9907",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-BVA-03: Biên n = 4 lần sai → khóa. R3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1952,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:48:33.703Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-25425d5167aa916af2d4",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-BVA-05: Biên t = 29 s → vẫn khóa. R3, A4. Chạy chậm (test.slow)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                    "line": 43,
+                    "column": 37
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 30825,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:48:35.662Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "line": 43,
+                        "column": 37
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-aa3003e467e55c6135a0",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-BVA-06: Biên t = 30 s → mở khóa. R3, A4. HW02 Fail → bug #91 (khóa ~180 s)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                    "line": 43,
+                    "column": 37
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 31814,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:92:22",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                      "column": 22,
+                      "line": 92
+                    },
+                    "snippet": " \u001b[90m 90 |\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'success'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 92 |\u001b[39m       expect(status)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m`${WEB_URL}${expected.urlPath ?? '/'}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m     }\n \u001b[90m 95 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'rejected'\u001b[39m) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 22,
+                        "line": 92
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n\n \u001b[90m 90 |\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'success'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 92 |\u001b[39m       expect(status)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m`${WEB_URL}${expected.urlPath ?? '/'}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m     }\n \u001b[90m 95 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'rejected'\u001b[39m) {\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:92:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:49:06.495Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "line": 43,
+                        "column": 37
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-BVA-06-Biê-9288b-2-Fail-→-bug-91-khóa-180-s--chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-BVA-06-Biê-9288b-2-Fail-→-bug-91-khóa-180-s--chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                    "column": 22,
+                    "line": 92
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-c5bd5ac9de8071a81300",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "FR02-BVA-07: Biên t = 31 s → mở khóa. R3. HW02 Fail → bug #91",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                    "line": 43,
+                    "column": 37
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 32926,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:92:22",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                      "column": 22,
+                      "line": 92
+                    },
+                    "snippet": " \u001b[90m 90 |\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'success'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 92 |\u001b[39m       expect(status)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m`${WEB_URL}${expected.urlPath ?? '/'}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m     }\n \u001b[90m 95 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'rejected'\u001b[39m) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "column": 22,
+                        "line": 92
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n\n \u001b[90m 90 |\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'success'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 92 |\u001b[39m       expect(status)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m`${WEB_URL}${expected.urlPath ?? '/'}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m     }\n \u001b[90m 95 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39moutcome \u001b[33m===\u001b[39m \u001b[32m'rejected'\u001b[39m) {\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts:92:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T02:49:38.721Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                        "line": 43,
+                        "column": 37
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-BVA-07-Biê-6b5a3--khóa-R3-HW02-Fail-→-bug-91-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr02-login-FR02-BVA-07-Biê-6b5a3--khóa-R3-HW02-Fail-→-bug-91-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr02-login.spec.ts",
+                    "column": 22,
+                    "line": 92
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea278c5c4f890c6be6c8-b4795fc207135c3c788e",
+          "file": "fr02-login.spec.ts",
+          "line": 41,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-18T02:47:31.215Z",
+    "duration": 160570.734,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}

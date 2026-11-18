@@ -1,0 +1,1740 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/fr16-import.spec.ts",
+      "--project=firefox"
+    ],
+    "configFile": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\playwright.config.ts",
+    "rootDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23120017",
+      "Run at (ISO)": "2026-11-18T03:03:32.193Z",
+      "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T03:03:32.193Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T03:03:32.193Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T03:03:32.193Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/codeStudy/test/Homeworks/HW02/software-testing-2026-HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120017",
+          "Run at (ISO)": "2026-11-18T03:03:32.193Z",
+          "SUT": "EShop (ttbhanh/eshop-sut) — Web :5173, Admin :5174, API :3000",
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests",
+        "snapshotDir": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "screenshot": "only-on-failure",
+          "trace": "off",
+          "video": "off",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/FR16-firefox",
+          "open": "never",
+          "title": "EShop HW04 — Run by: 23120017 — 2026-11-18T03:03:32.193Z"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/FR16-firefox/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr16-import.spec.ts",
+      "file": "fr16-import.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FR16-EP-01: Positive: 2 dòng hợp lệ. R1–R7",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5112,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:03:32.590Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-7b36c9b4a4327853d63e",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-02: Negative: đuôi .txt. R1. HW02 Fail → bug #105",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9334,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP02 Txt\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP02 Txt\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP02 Txt\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /định dạng|csv|file|tệp/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/định dạng|csv|file|tệp/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 1/1 sản phẩm được thêm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /định dạng|csv|file|tệp/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 1/1 sản phẩm được thêm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:03:38.099Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-02-Neg-56209--txt-R1-HW02-Fail-→-bug-105-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-02-Neg-56209--txt-R1-HW02-Fail-→-bug-105-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-7a10dd814bb6ec5f567b",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-03: Negative: file nhị phân .xlsx. R1. HW02 Fail → bug #105",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10111,
+                  "error": {
+                    "message": "Error: Báo cáo import phải nêu lý do khớp /định dạng|csv|file|tệp/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/định dạng|csv|file|tệp/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 0/2 sản phẩm được thêmHàng 2: Thiếu tên sản phẩmHàng 3: Thiếu tên sản phẩm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /định dạng|csv|file|tệp/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 0/2 sản phẩm được thêmHàng 2: Thiếu tên sản phẩmHàng 3: Thiếu tên sản phẩm\"\u001b[22m\n",
+                    "stack": "Error: Báo cáo import phải nêu lý do khớp /định dạng|csv|file|tệp/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/định dạng|csv|file|tệp/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 0/2 sản phẩm được thêmHàng 2: Thiếu tên sản phẩmHàng 3: Thiếu tên sản phẩm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /định dạng|csv|file|tệp/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 0/2 sản phẩm được thêmHàng 2: Thiếu tên sản phẩmHàng 3: Thiếu tên sản phẩm\"\u001b[22m\n\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 10,
+                      "line": 51
+                    },
+                    "snippet": " \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /định dạng|csv|file|tệp/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/định dạng|csv|file|tệp/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 0/2 sản phẩm được thêmHàng 2: Thiếu tên sản phẩmHàng 3: Thiếu tên sản phẩm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /định dạng|csv|file|tệp/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 0/2 sản phẩm được thêmHàng 2: Thiếu tên sản phẩmHàng 3: Thiếu tên sản phẩm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:03:48.049Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-03-Neg-a3805-xlsx-R1-HW02-Fail-→-bug-105-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-03-Neg-a3805-xlsx-R1-HW02-Fail-→-bug-105-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 10,
+                    "line": 51
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-00683feccfe095ff33f0",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-04: Negative: sai tên cột header. R2. HW02 Fail → bug #106",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10138,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP04 Sai header\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP04 Sai header\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP04 Sai header\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /header|tiêu đề|cột/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/header|tiêu đề|cột/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 1/1 sản phẩm được thêm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /header|tiêu đề|cột/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 1/1 sản phẩm được thêm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:03:59.190Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-04-Neg-8830f-ader-R2-HW02-Fail-→-bug-106-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-04-Neg-8830f-ader-R2-HW02-Fail-→-bug-106-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-1f25fe44fdbfaee4d7e6",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-05: Negative: không có header. R2. HW02 Fail → bug #106",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10170,
+                  "error": {
+                    "message": "Error: Báo cáo import phải nêu lý do khớp /header|tiêu đề|cột/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/header|tiêu đề|cột/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 0/1 sản phẩm được thêmHàng 2: Thiếu tên sản phẩm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /header|tiêu đề|cột/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 0/1 sản phẩm được thêmHàng 2: Thiếu tên sản phẩm\"\u001b[22m\n",
+                    "stack": "Error: Báo cáo import phải nêu lý do khớp /header|tiêu đề|cột/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/header|tiêu đề|cột/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 0/1 sản phẩm được thêmHàng 2: Thiếu tên sản phẩm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /header|tiêu đề|cột/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 0/1 sản phẩm được thêmHàng 2: Thiếu tên sản phẩm\"\u001b[22m\n\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 10,
+                      "line": 51
+                    },
+                    "snippet": " \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /header|tiêu đề|cột/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/header|tiêu đề|cột/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 0/1 sản phẩm được thêmHàng 2: Thiếu tên sản phẩm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /header|tiêu đề|cột/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 0/1 sản phẩm được thêmHàng 2: Thiếu tên sản phẩm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:04:10.345Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-05-Neg-d3cb2-ader-R2-HW02-Fail-→-bug-106-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-05-Neg-d3cb2-ader-R2-HW02-Fail-→-bug-106-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 10,
+                    "line": 51
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-5b8af82eb2648204b527",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-06: Positive: trường có dấu phẩy bọc nháy (RFC 4180). R3. HW02 Fail → bug #104",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5399,
+                  "error": {
+                    "message": "Error: Tên sản phẩm phải được lưu đúng nguyên văn\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mArrayContaining [\"CSV-EP06 Laptop, Pro\"]\u001b[39m\nReceived: \u001b[31m[\"\\\"CSV-EP06 Laptop\"]\u001b[39m",
+                    "stack": "Error: Tên sản phẩm phải được lưu đúng nguyên văn\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mArrayContaining [\"CSV-EP06 Laptop, Pro\"]\u001b[39m\nReceived: \u001b[31m[\"\\\"CSV-EP06 Laptop\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:54:91",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 91,
+                      "line": 54
+                    },
+                    "snippet": " \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m     }\n \u001b[90m 56 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mprice \u001b[33m!==\u001b[39m undefined) {\n \u001b[90m 57 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(\u001b[33mNumber\u001b[39m(added[\u001b[35m0\u001b[39m]\u001b[33m?.\u001b[39mprice)\u001b[33m,\u001b[39m \u001b[32m'Giá sản phẩm phải được lưu đúng'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected\u001b[33m.\u001b[39mprice)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 91,
+                        "line": 54
+                      },
+                      "message": "Error: Tên sản phẩm phải được lưu đúng nguyên văn\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mArrayContaining [\"CSV-EP06 Laptop, Pro\"]\u001b[39m\nReceived: \u001b[31m[\"\\\"CSV-EP06 Laptop\"]\u001b[39m\n\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m     }\n \u001b[90m 56 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mprice \u001b[33m!==\u001b[39m undefined) {\n \u001b[90m 57 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(\u001b[33mNumber\u001b[39m(added[\u001b[35m0\u001b[39m]\u001b[33m?.\u001b[39mprice)\u001b[33m,\u001b[39m \u001b[32m'Giá sản phẩm phải được lưu đúng'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected\u001b[33m.\u001b[39mprice)\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:54:91\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 79,
+                        "line": 57
+                      },
+                      "message": "Error: Giá sản phẩm phải được lưu đúng\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m25000000\u001b[39m\nReceived: \u001b[31mNaN\u001b[39m\n\n \u001b[90m 55 |\u001b[39m     }\n \u001b[90m 56 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mprice \u001b[33m!==\u001b[39m undefined) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(\u001b[33mNumber\u001b[39m(added[\u001b[35m0\u001b[39m]\u001b[33m?.\u001b[39mprice)\u001b[33m,\u001b[39m \u001b[32m'Giá sản phẩm phải được lưu đúng'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected\u001b[33m.\u001b[39mprice)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 58 |\u001b[39m     }\n \u001b[90m 59 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mrenderedAsTextOnWeb) {\n \u001b[90m 60 |\u001b[39m       \u001b[36mconst\u001b[39m name \u001b[33m=\u001b[39m expected\u001b[33m.\u001b[39mnames\u001b[33m!\u001b[39m[\u001b[35m0\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:57:79\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:04:21.516Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-06-Pos-86ff2-4180-R3-HW02-Fail-→-bug-104-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-06-Pos-86ff2-4180-R3-HW02-Fail-→-bug-104-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 91,
+                    "line": 54
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-2bafceda2aa82fe1dca6",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-07: Negative: dòng giữa thiếu tên → rollback. R4, R6. HW02 Fail → bug #102",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5465,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP07 Dong 1\", \"CSV-EP07 Dong 3\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP07 Dong 1\", \"CSV-EP07 Dong 3\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP07 Dong 1\", \"CSV-EP07 Dong 3\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:04:27.955Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-07-Neg-02898-k-R4-R6-HW02-Fail-→-bug-102-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-07-Neg-02898-k-R4-R6-HW02-Fail-→-bug-102-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-5e65f94e7716a4165286",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-08: Negative: price = 0 → rollback. R5, R6. HW02 Fail → bug #103",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10138,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP08 Hop le\", \"CSV-EP08 Gia 0\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP08 Hop le\", \"CSV-EP08 Gia 0\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP08 Hop le\", \"CSV-EP08 Gia 0\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /giá|price/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/giá|price/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 2/2 sản phẩm được thêm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /giá|price/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 2/2 sản phẩm được thêm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:04:34.447Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-08-Neg-e20e5-k-R5-R6-HW02-Fail-→-bug-103-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-08-Neg-e20e5-k-R5-R6-HW02-Fail-→-bug-103-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-518e7833f3ea5a881e2a",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-09: Negative: price âm → rollback. HW02 Fail → bug #103",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10127,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP09 Hop le\", \"CSV-EP09 Gia am\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP09 Hop le\", \"CSV-EP09 Gia am\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP09 Hop le\", \"CSV-EP09 Gia am\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /giá|price/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/giá|price/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 2/2 sản phẩm được thêm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /giá|price/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 2/2 sản phẩm được thêm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:04:45.614Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-09-Neg-f6158-ollback-HW02-Fail-→-bug-103-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-09-Neg-f6158-ollback-HW02-Fail-→-bug-103-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-965055d7a463b0c186f0",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-10: Negative: price là chữ → rollback. HW02 Fail → bug #103",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10049,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP10 Hop le\", \"CSV-EP10 Gia chu\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP10 Hop le\", \"CSV-EP10 Gia chu\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP10 Hop le\", \"CSV-EP10 Gia chu\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /giá|price/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/giá|price/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 2/2 sản phẩm được thêm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /giá|price/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 2/2 sản phẩm được thêm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:04:56.747Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-10-Neg-55e7a-ollback-HW02-Fail-→-bug-103-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-10-Neg-55e7a-ollback-HW02-Fail-→-bug-103-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-92f530b3d88f4b13e2ea",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-11: Negative: chỉ có header → không import được. R7",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5012,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:05:07.827Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-d07083c46ef878b939c0",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-16: Positive: nháy kép escape \"\". R3. HW02 Fail → bug #104",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4259,
+                  "error": {
+                    "message": "Error: Tên sản phẩm phải được lưu đúng nguyên văn\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mArrayContaining [\"CSV-EP16 Tai nghe \\\"Pro\\\"\"]\u001b[39m\nReceived: \u001b[31m[\"\\\"CSV-EP16 Tai nghe \\\"\\\"Pro\\\"\\\"\\\"\"]\u001b[39m",
+                    "stack": "Error: Tên sản phẩm phải được lưu đúng nguyên văn\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mArrayContaining [\"CSV-EP16 Tai nghe \\\"Pro\\\"\"]\u001b[39m\nReceived: \u001b[31m[\"\\\"CSV-EP16 Tai nghe \\\"\\\"Pro\\\"\\\"\\\"\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:54:91",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 91,
+                      "line": 54
+                    },
+                    "snippet": " \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m     }\n \u001b[90m 56 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mprice \u001b[33m!==\u001b[39m undefined) {\n \u001b[90m 57 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(\u001b[33mNumber\u001b[39m(added[\u001b[35m0\u001b[39m]\u001b[33m?.\u001b[39mprice)\u001b[33m,\u001b[39m \u001b[32m'Giá sản phẩm phải được lưu đúng'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected\u001b[33m.\u001b[39mprice)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 91,
+                        "line": 54
+                      },
+                      "message": "Error: Tên sản phẩm phải được lưu đúng nguyên văn\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mArrayContaining [\"CSV-EP16 Tai nghe \\\"Pro\\\"\"]\u001b[39m\nReceived: \u001b[31m[\"\\\"CSV-EP16 Tai nghe \\\"\\\"Pro\\\"\\\"\\\"\"]\u001b[39m\n\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m     }\n \u001b[90m 56 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mprice \u001b[33m!==\u001b[39m undefined) {\n \u001b[90m 57 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(\u001b[33mNumber\u001b[39m(added[\u001b[35m0\u001b[39m]\u001b[33m?.\u001b[39mprice)\u001b[33m,\u001b[39m \u001b[32m'Giá sản phẩm phải được lưu đúng'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected\u001b[33m.\u001b[39mprice)\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:54:91\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:05:13.209Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-16-Pos-b1ae8-cape-R3-HW02-Fail-→-bug-104-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-16-Pos-b1ae8-cape-R3-HW02-Fail-→-bug-104-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 91,
+                    "line": 54
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-4b1823f2ee86fb300f17",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-17: Positive: file UTF-8 có BOM (giả định A3)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5015,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:05:18.093Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-3a147ded0ca79af3fc9b",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-18: Negative: category_id = 99 không tồn tại (giả định A6). HW02 Fail → bug #108",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4273,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP18 Danh muc 99\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP18 Danh muc 99\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-EP18 Danh muc 99\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:05:23.485Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-18-Neg-7cd1b-định-A6-HW02-Fail-→-bug-108-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-EP-18-Neg-7cd1b-định-A6-HW02-Fail-→-bug-108-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-4bac187a38fa9f991dd7",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-20: Positive: xuống dòng CRLF, tên không dính \\r",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5105,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:05:28.374Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-44a6240dd3ac9f758d91",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-EP-21: Positive (bảo mật): tên chứa HTML hiển thị nguyên văn trên Web. SEC-04",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6576,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:05:33.843Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-fcdfb1c9daf3898682a6",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-BVA-01: Biên price = −0,01. R5. HW02 Fail → bug #103",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9204,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA01 Gia -0.01\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA01 Gia -0.01\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA01 Gia -0.01\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /giá|price/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/giá|price/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 1/1 sản phẩm được thêm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /giá|price/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 1/1 sản phẩm được thêm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:05:40.427Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-01-Bi-464e0-0-01-R5-HW02-Fail-→-bug-103-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-01-Bi-464e0-0-01-R5-HW02-Fail-→-bug-103-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-47e0a85ea15e983ea517",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-BVA-02: Biên price = 0. R5. HW02 Fail → bug #103",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10179,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA02 Gia 0\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA02 Gia 0\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA02 Gia 0\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /giá|price/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/giá|price/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 1/1 sản phẩm được thêm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /giá|price/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 1/1 sản phẩm được thêm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:05:50.236Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-02-Biên-price-0-R5-HW02-Fail-→-bug-103-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-02-Biên-price-0-R5-HW02-Fail-→-bug-103-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-cf774933708457801f7d",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-BVA-03: Biên price = 0,01. R5",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5244,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:06:01.422Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-dc2eeeacfb3417b10f48",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-BVA-04: Biên tên 0 ký tự. R4",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4405,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:06:07.043Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-7eb738c8a816a57b34df",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-BVA-05: Biên tên 1 ký tự. R4",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4292,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:06:11.456Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-137e6a500f21f75e880d",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-BVA-08: Biên tên 255 ký tự (giả định A5)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4214,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:06:15.758Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-4c0acf79d092e37f113a",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-BVA-09: Biên tên 256 ký tự → từ chối (giả định A5). HW02 Fail → bug #109",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4228,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:06:19.982Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-09-Bi-1e24c-định-A5-HW02-Fail-→-bug-109-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-09-Bi-1e24c-định-A5-HW02-Fail-→-bug-109-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-736f7956729a5c645abb",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-BVA-13: Biên vị trí lỗi: dòng đầu → rollback. R6. HW02 Fail → bug #102",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5185,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA13 Dong 2\", \"CSV-BVA13 Dong 3\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA13 Dong 2\", \"CSV-BVA13 Dong 3\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA13 Dong 2\", \"CSV-BVA13 Dong 3\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:06:24.806Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-13-Bi-323c0-back-R6-HW02-Fail-→-bug-102-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-13-Bi-323c0-back-R6-HW02-Fail-→-bug-102-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-ae8666881d7fb8b0b87b",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-BVA-14: Biên vị trí lỗi: dòng cuối → rollback. R6. HW02 Fail → bug #103",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10091,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m3\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA14 Dong 1\", \"CSV-BVA14 Dong 2\", \"CSV-BVA14 Gia 0\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m3\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA14 Dong 1\", \"CSV-BVA14 Dong 2\", \"CSV-BVA14 Gia 0\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m3\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA14 Dong 1\", \"CSV-BVA14 Dong 2\", \"CSV-BVA14 Gia 0\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /giá|price/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/giá|price/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 3/3 sản phẩm được thêm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /giá|price/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 3/3 sản phẩm được thêm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:06:31.026Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-14-Bi-f234b-back-R6-HW02-Fail-→-bug-103-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-14-Bi-f234b-back-R6-HW02-Fail-→-bug-103-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-3cd1cd802d7620c85a45",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "FR16-BVA-15: Biên số cột = 4 → báo lỗi header. R2. HW02 Fail → bug #106",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10158,
+                  "error": {
+                    "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA15 Bon cot\"]\u001b[39m",
+                    "stack": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA15 Bon cot\"]\u001b[39m\n    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8",
+                    "location": {
+                      "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                      "column": 8,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 8,
+                        "line": 47
+                      },
+                      "message": "Error: Số sản phẩm được thêm vào DB phải là 0 (0 = từ chối / rollback toàn bộ)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"CSV-BVA15 Bon cot\"]\u001b[39m\n\n \u001b[90m 45 |\u001b[39m     \u001b[90m// → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên\u001b[39m\n \u001b[90m 46 |\u001b[39m     expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m`Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m       \u001b[33m.\u001b[39mtoHaveLength(expected\u001b[33m.\u001b[39madded)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:47:8\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                        "column": 10,
+                        "line": 51
+                      },
+                      "message": "Error: Báo cáo import phải nêu lý do khớp /header|tiêu đề|cột/\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\nExpected pattern: \u001b[32m/header|tiêu đề|cột/i\u001b[39m\nReceived string:  \u001b[31m\"✅ Import hoàn tất: 1/1 sản phẩm được thêm\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Báo cáo import phải nêu lý do khớp /header|tiêu đề|cột/ locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div').filter({ has: getByRole('heading', { name: /Import sản phẩm từ CSV/ }) }).filter({ has: locator('input[type=\"file\"]') }).last().getByText(/Import hoàn tất|❌/).locator('..')\u001b[22m\n\u001b[2m    13 × locator resolved to <div class=\"mt-2 p-3 rounded text-sm bg-green-100 text-green-800\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"✅ Import hoàn tất: 1/1 sản phẩm được thêm\"\u001b[22m\n\n\n \u001b[90m 49 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mreasonPattern) {\n \u001b[90m 50 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(ap\u001b[33m.\u001b[39mresultBox\u001b[33m,\u001b[39m \u001b[32m`Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m         \u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(expected\u001b[33m.\u001b[39mreasonPattern\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mnames) {\n \u001b[90m 54 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(added\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m p\u001b[33m.\u001b[39mname)\u001b[33m,\u001b[39m \u001b[32m'Tên sản phẩm phải được lưu đúng nguyên văn'\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expect\u001b[33m.\u001b[39marrayContaining(expected\u001b[33m.\u001b[39mnames))\u001b[33m;\u001b[39m\n\u001b[2m    at D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts:51:10\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T03:06:42.127Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-15-Bi-fabea-ader-R2-HW02-Fail-→-bug-106-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\test-results\\fr16-import-FR16-BVA-15-Bi-fabea-ader-R2-HW02-Fail-→-bug-106-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\codeStudy\\test\\Homeworks\\HW02\\software-testing-2026-HW04\\tests\\fr16-import.spec.ts",
+                    "column": 8,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6213ee97c9a5f6a5abf8-d031f39d8e1b7283d403",
+          "file": "fr16-import.spec.ts",
+          "line": 26,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-18T03:03:32.195Z",
+    "duration": 200762.095,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 17,
+    "flaky": 0
+  }
+}
