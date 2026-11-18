@@ -4,7 +4,8 @@
   "description": "Bài cá nhân HW04 (Automation Testing với Playwright) trên EShop (https://github.com/ttbhanh/eshop-sut). Dùng lại 3 feature Web đã chọn ở HW02 (repo HW02: `software-testing-2026-HW02`).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "test:reports": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-reports.ps1"
   },
   "repository": {
     "type": "git",
