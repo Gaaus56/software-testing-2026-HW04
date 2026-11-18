@@ -47,12 +47,13 @@ for (const tc of cases) {
     await lp.goto();
 
     // --- TC chỉ kiểm giao diện form (không đăng nhập) ---
+    // expect.soft: kiểm hết mọi thuộc tính rồi mới báo Fail, để không bỏ sót lỗi phía sau lỗi đầu tiên
     if (input.login === null) {
-      if (expected.emailInputType) await expect(lp.emailInput).toHaveAttribute('type', expected.emailInputType);
-      if (expected.passwordInputType) await expect(lp.passwordInput).toHaveAttribute('type', expected.passwordInputType);
+      if (expected.emailInputType) await expect.soft(lp.emailInput, 'Ô email phải có type="email"').toHaveAttribute('type', expected.emailInputType);
+      if (expected.passwordInputType) await expect.soft(lp.passwordInput, 'Ô mật khẩu phải có type="password"').toHaveAttribute('type', expected.passwordInputType);
       if (expected.requiredMarkOnLabels) {
-        await expect(lp.emailLabel).toContainText('*');
-        await expect(lp.passwordLabel).toContainText('*');
+        await expect.soft(lp.emailLabel, 'Nhãn email phải có dấu *').toContainText('*');
+        await expect.soft(lp.passwordLabel, 'Nhãn mật khẩu phải có dấu *').toContainText('*');
       }
       return;
     }
@@ -115,13 +116,14 @@ for (const tc of cases) {
       expect(body, `Response phải giống ${expected.sameResponseAs}`).toEqual(reference.body);
       await expect(lp.errorMessage()).toHaveText(reference.ui);
     }
+    // Hai yêu cầu giao diện độc lập (nội dung và vị trí thông báo) → soft để báo đủ cả hai
     if (expected.uiMessagePattern) {
-      await expect(lp.errorMessage()).toContainText(new RegExp(expected.uiMessagePattern, 'i'));
+      await expect.soft(lp.errorMessage(), 'Thông báo phải cho biết tài khoản đang bị khóa').toContainText(new RegExp(expected.uiMessagePattern, 'i'));
     }
     if (expected.errorAboveSubmit) {
       const err = await lp.errorMessage().boundingBox();
       const btn = await lp.submitButton.boundingBox();
-      expect(err!.y, 'Thông báo lỗi phải nằm trên nút submit (FR-22)').toBeLessThan(btn!.y);
+      expect.soft(err!.y, 'Thông báo lỗi phải nằm trên nút submit (FR-22)').toBeLessThan(btn!.y);
     }
     if (expected.authHeaderPrefix) {
       const req = page.waitForRequest((r) => r.url().includes('/api/orders/my-orders'));
