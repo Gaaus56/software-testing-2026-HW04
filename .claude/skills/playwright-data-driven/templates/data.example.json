@@ -1,0 +1,8 @@
+[
+  {
+    "id": "FR05-EP-01",
+    "input": { "keyword": "iPhone" },
+    "expected": { "minResults": 1, "allNamesMatch": "iPhone" },
+    "note": "Positive: từ khóa có kết quả. Căn cứ đặc tả FR-05"
+  }
+]
