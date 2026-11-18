@@ -41,16 +41,20 @@ for (const tc of cases) {
 
     const after = await listProducts();
     const added = after.filter((p) => !before.some((b) => b.id === p.id));
-    expect(added, `Số sản phẩm được thêm vào DB`).toHaveLength(expected.added);
+    // soft: một ca import có thể sai nhiều mặt cùng lúc (không rollback + báo cáo không nêu lý do)
+    // → kiểm hết rồi mới báo, thay vì dừng ở lỗi đầu tiên
+    expect.soft(added.map((p) => p.name), `Số sản phẩm được thêm vào DB phải là ${expected.added} (0 = từ chối / rollback toàn bộ)`)
+      .toHaveLength(expected.added);
 
     if (expected.reasonPattern) {
-      await expect(ap.resultBox).toContainText(new RegExp(expected.reasonPattern, 'i'));
+      await expect.soft(ap.resultBox, `Báo cáo import phải nêu lý do khớp /${expected.reasonPattern}/`)
+        .toContainText(new RegExp(expected.reasonPattern, 'i'));
     }
     if (expected.names) {
-      expect(added.map((p) => p.name)).toEqual(expect.arrayContaining(expected.names));
+      expect.soft(added.map((p) => p.name), 'Tên sản phẩm phải được lưu đúng nguyên văn').toEqual(expect.arrayContaining(expected.names));
     }
     if (expected.price !== undefined) {
-      expect(Number(added[0]?.price)).toBe(expected.price);
+      expect.soft(Number(added[0]?.price), 'Giá sản phẩm phải được lưu đúng').toBe(expected.price);
     }
     if (expected.renderedAsTextOnWeb) {
       const name = expected.names![0];
