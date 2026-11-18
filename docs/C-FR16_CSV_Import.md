@@ -156,3 +156,17 @@ Lệnh (sinh viên tự chạy): `npm run test:reports` → [`scripts/run-report
 - **Không có ca flaky**, không có ca bị bỏ qua. Không có lỗi nào chỉ xuất hiện trên một trình duyệt.
 - Mọi ca Fail đều do lỗi thật của SUT đã phân loại ở S5.2, trùng các bug HW02: #102, #103, #104, #105, #106, #108, #109.
 - Ảnh bảng tổng hợp của lần chạy: [`docs/images/S6_run_summary.png`](images/S6_run_summary.png).
+
+## S7. Bug
+
+17 TC Fail → 7 issue HW02, Fail trên cả 3 trình duyệt. Không có bug mới, nên **không tạo issue mới** (tránh trùng, theo quy ước nhóm). Bằng chứng tái hiện tự động được ghi vào [`docs/Bug_Report.md`](Bug_Report.md), kèm ảnh trang GitHub Issue trong `bugs/issue-screenshots/`.
+
+| Issue | Bug HW02 | Lỗi | TC HW04 Fail |
+|---|---|---|---|
+| [#102](https://github.com/angquoc/software-testing-2026-HW02-group/issues/102) | BUG-FR16-01 | Không rollback | EP-07, BVA-13 |
+| [#103](https://github.com/angquoc/software-testing-2026-HW02-group/issues/103) | BUG-FR16-02 | Chấp nhận giá 0 / âm / chữ | EP-08, EP-09, EP-10, BVA-01, BVA-02, BVA-14 |
+| [#104](https://github.com/angquoc/software-testing-2026-HW02-group/issues/104) | BUG-FR16-03 | Không hỗ trợ RFC 4180 | EP-06, EP-16 |
+| [#105](https://github.com/angquoc/software-testing-2026-HW02-group/issues/105) | BUG-FR16-04 | Không kiểm đuôi/loại file | EP-02, EP-03 |
+| [#106](https://github.com/angquoc/software-testing-2026-HW02-group/issues/106) | BUG-FR16-05 | Không kiểm header | EP-04, EP-05, BVA-15 |
+| [#108](https://github.com/angquoc/software-testing-2026-HW02-group/issues/108) | BUG-FR16-07 | Chấp nhận category_id không tồn tại | EP-18 |
+| [#109](https://github.com/angquoc/software-testing-2026-HW02-group/issues/109) | BUG-FR16-08 | Chấp nhận tên 256 ký tự | BVA-09 |
