@@ -113,3 +113,31 @@ File: [`tests/fr16-import.spec.ts`](../tests/fr16-import.spec.ts) — commit `[C
 | So tập hợp | `expect(names).toEqual(expect.arrayContaining([...]))` | Tên sản phẩm lưu đúng nguyên văn |
 | Trạng thái phần tử | `expect(ap.importButton).toBeDisabled()` | File không có dòng dữ liệu |
 | Hiển thị / số lượng | `toBeVisible()`, `toHaveCount(0)` | Tên có HTML hiện dạng chữ trên Web |
+
+## S5. Chạy thử, review và sửa script AI
+
+Chạy trên Chromium: `npx playwright test tests/fr16-import.spec.ts --browser=chromium --workers=1`.
+
+### S5.1 Lỗi của script AI và cách sửa
+
+| # | Vấn đề trong bản AI (S4) | Loại | Vì sao AI sai | Sửa | Commit |
+|---|---|---|---|---|---|
+| R1 | `mode: 'serial'`: một Fail làm các test sau bị bỏ qua | Cấu hình chạy sai | Như FR-02 R1 | Bỏ serial | `[C-FR16][S5] Run data-driven cases independently…` |
+| R2 | Kiểm số sản phẩm bằng assertion cứng → khi không rollback (Fail), **không kiểm tiếp lý do trong báo cáo và tên đã lưu** | Assertion thiếu | Như FR-02 R2: AI dùng assertion cứng cho mọi kiểm | `expect.soft` cho số lượng, lý do, tên, giá | `[C-FR16][S5] Report count, reason and saved names together…` |
+| R3 | Thông báo Fail của kiểm lý do chỉ hiện locator dài | Thông báo Fail khó hiểu | AI không đặt thông báo tùy chỉnh | Thêm thông báo: "Báo cáo import phải nêu lý do khớp /…/" | Cùng commit trên |
+
+Lỗi đã sửa ngay trong Page Object ở S3: chọn sai khối Import, `isVisible()` không chờ trên WebKit.
+
+### S5.2 Kết quả trên Chromium và phân loại Fail
+
+**9 Pass / 17 Fail.** Cả 17 Fail đều do **lỗi thật của SUT**:
+
+| TC | Thông báo Fail | Bug HW02 |
+|---|---|---|
+| FR16-EP-02, EP-03 | `.txt` được import; `.xlsx` bị đọc như CSV, báo "Thiếu tên" thay vì sai định dạng | #105 |
+| FR16-EP-04, EP-05, BVA-15 | Header sai / không có header / 4 cột vẫn xử lý | #106 |
+| FR16-EP-06, EP-16 | Tên lưu thành `"CSV-EP06 Laptop`, giá NaN; nháy kép không được xử lý | #104 |
+| FR16-EP-07, BVA-13 | Dòng thiếu tên bị bỏ, các dòng còn lại vẫn được thêm (không rollback) | #102 |
+| FR16-EP-08, 09, 10, BVA-01, 02, 14 | Giá 0 / âm / chữ được lưu | #103 |
+| FR16-EP-18 | category_id = 99 được lưu | #108 |
+| FR16-BVA-09 | Tên 256 ký tự được lưu | #109 |
