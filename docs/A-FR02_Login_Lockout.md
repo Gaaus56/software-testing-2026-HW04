@@ -98,3 +98,32 @@ File: [`tests/fr02-login.spec.ts`](../tests/fr02-login.spec.ts) — commit `[A-F
 | Giá trị response bắt được | `expect(status).toBe(200)`, `toBeGreaterThanOrEqual(400)`, `toEqual(reference.body)` | 401/403, không lộ nguyên nhân |
 | Trạng thái client | `expect(token).toBeTruthy()` / `toBeNull()` | Lưu JWT |
 | Vị trí phần tử | `expect(err.y).toBeLessThan(btn.y)` | Thông báo nằm trên nút submit |
+
+## S5. Chạy thử, review và sửa script AI
+
+Chạy trên Chromium: `npx playwright test tests/fr02-login.spec.ts --browser=chromium --workers=1`.
+
+### S5.1 Lỗi của script AI và cách sửa
+
+| # | Vấn đề trong bản AI (S4) | Loại | Vì sao AI sai | Sửa | Commit |
+|---|---|---|---|---|---|
+| R1 | `test.describe.configure({ mode: 'serial' })`: test EP-04 Fail (bug thật) làm **14 test sau bị bỏ qua** | Cấu hình chạy sai | AI chọn "serial" vì các test dùng chung backend, nhưng không lường tới việc trong bộ test **có sẵn ca dự kiến Fail**. Với serial, một Fail sẽ chặn cả chuỗi | Bỏ serial; mỗi test tự reset backend nên độc lập; chạy 1 worker | `[A-FR02][S5] Run data-driven cases independently…` |
+| R2 | EP-09 kiểm 4 thuộc tính form bằng `expect` thường → Fail ở thuộc tính đầu (ô email `type="text"`), **3 lỗi còn lại không được báo**. EP-10 tương tự: chưa bao giờ kiểm tới vị trí thông báo | Assertion yếu / thiếu | Prompt yêu cầu "≥ 3 kiểu assertion" chứ không nói về việc báo **đủ** lỗi trong một ca. AI mặc định dùng assertion cứng | Đổi sang `expect.soft` kèm thông báo dễ hiểu cho từng yêu cầu | `[A-FR02][S5] Use soft assertions so every GUI defect is reported` |
+
+Sau khi sửa, EP-09 báo đủ 4 lỗi: email `type="text"`, mật khẩu `type="text"`, 2 nhãn thiếu `*`. EP-10 báo đủ 2 lỗi: thông báo không nói "khóa", và thông báo nằm dưới nút (y = 517 > 425).
+
+Lỗi đã phát hiện và sửa ngay trong Page Object (xem S3): không có lỗi nào riêng cho `LoginPage`.
+
+### S5.2 Kết quả trên Chromium và phân loại Fail
+
+**11 Pass / 7 Fail.** Cả 7 Fail đều do **lỗi thật của SUT**, không có Fail nào do script:
+
+| TC | Thông báo Fail | Bug HW02 |
+|---|---|---|
+| FR02-EP-04 | Form vẫn gửi `POST /api/login` với email "abc" | #93 |
+| FR02-EP-09 | Email và mật khẩu đều `type="text"`; nhãn thiếu `*` | #92, #93, #95 |
+| FR02-EP-10 | Thông báo "Đăng nhập thất bại…" (không nói khóa), nằm dưới nút | #94 |
+| FR02-EP-11 | 2 sai → đúng → 403 (khóa sớm) | #90 |
+| FR02-BVA-01 | 2 lần sai → mật khẩu đúng → 403 | #90 |
+| FR02-BVA-06 | Chờ 30 s → vẫn 403 | #91 |
+| FR02-BVA-07 | Chờ 31 s → vẫn 403 | #91 |
