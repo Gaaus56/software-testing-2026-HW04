@@ -45,4 +45,4 @@ Làm trên nhánh [`skill-demo`](https://github.com/Gaaus56/software-testing-202
 
 **Khác biệt giữa các trình duyệt (nghi vấn, chưa kiểm chứng):** FR05-EP-13 (từ khóa có ký tự đặc biệt kiểu SQL) Fail trên Chromium và Firefox, vì trang hiện lỗi DB thô "Database Error" cho người dùng; trên WebKit thì Pass. Có thể do mỗi trình duyệt mã hóa ký tự trong URL tìm kiếm khác nhau. Đây đúng là loại phát hiện mà bước "so 3 trình duyệt" của skill (S6) được thiết kế để làm lộ ra.
 
-Video demo skill (YouTube unlisted): _(link video skill)_
+Video demo skill (YouTube unlisted): https://youtu.be/G9-n79TaW6Q

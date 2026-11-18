@@ -38,8 +38,8 @@ Dùng lại 3 feature Web đã chọn ở HW02 (repo HW02: `software-testing-202
 ## Liên kết
 
 - Repo public: https://github.com/Gaaus56/software-testing-2026-HW04 (nhánh `main`: bài nộp; nhánh `skill-demo`: kết quả demo Agent Skill trên FR-05)
-- Video demo Task 2 (YouTube unlisted): _(link video demo)_
-- Video Agent Skill (YouTube unlisted): _(link video skill)_
+- Video demo Task 2 (YouTube unlisted): https://youtu.be/fAnBwRB6nJs
+- Video Agent Skill (YouTube unlisted): https://youtu.be/G9-n79TaW6Q
 
 ## Tài liệu nộp
 
@@ -49,7 +49,7 @@ Dùng lại 3 feature Web đã chọn ở HW02 (repo HW02: `software-testing-202
 | Repo public (script, data, báo cáo HTML) | `tests/`, `pages/`, `helpers/`, `data/`, `reports/` |
 | Báo cáo HTML nhiều trình duyệt | [`reports/`](reports/): 9 thư mục `<FR>-<chromium\|firefox\|webkit>/index.html` |
 | Link video demo | Mục Liên kết ở trên |
-| AI Critique + AI Audit Report (MD + PDF) | [`ai/AI_Critique.md`](ai/AI_Critique.md), [`ai/AI_Audit_Report.md`](ai/AI_Audit_Report.md), form [`ai/forms/AI-03_Disclosure_Form.md`](ai/forms/AI-03_Disclosure_Form.md); prompt log `ai/prompt_logs/` (chỉ có trong file zip) |
+| AI Critique + AI Audit Report (MD + PDF) | [`ai/AI_Critique.md`](ai/AI_Critique.md), [`ai/AI_Audit_Report.md`](ai/AI_Audit_Report.md), form [`AI-03`](ai/forms/AI-03_Disclosure_Form.md), [`AI-04`](ai/forms/AI-04_Reflective_Statement.md) (AI Category 4); prompt log `ai/prompt_logs/` (chỉ có trong file zip) |
 | Git commit log | [`git_log.txt`](git_log.txt) |
 | Bug report + ảnh trang GitHub Issues | [`docs/Bug_Report.md`](docs/Bug_Report.md), [`bugs/issue-screenshots/`](bugs/issue-screenshots/) |
 | Agent Skill | [`.claude/skills/`](.claude/skills/), mô tả [`docs/Agent_Skill.md`](docs/Agent_Skill.md) |

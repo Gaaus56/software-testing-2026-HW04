@@ -45,4 +45,4 @@ Các bug sau chỉ tái hiện được ở tầng API (gửi request không qua
 
 ## Cập nhật trên GitHub Issues
 
-Sinh viên ghi một comment vào từng issue ở bảng đầu, ghi rằng lỗi được tái hiện tự động ở HW04 (TC, 3 trình duyệt, link báo cáo trong repo HW04). Mẫu comment: `docs/W04/HW04_issue_comments.md` (ngoài repo).
+Ngày 18/11/2026, sinh viên đã ghi comment HW04 vào cả 15 issue ở bảng đầu. Mỗi comment ghi TC đang Fail, kết quả 3 trình duyệt, và link tới báo cáo HTML trong repo HW04 (https://github.com/Gaaus56/software-testing-2026-HW04).

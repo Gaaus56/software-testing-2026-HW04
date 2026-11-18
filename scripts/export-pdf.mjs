@@ -18,6 +18,7 @@ const FILES = [
   'ai/AI_Audit_Report.md',
   'ai/AI_Critique.md',
   'ai/forms/AI-03_Disclosure_Form.md',
+  'ai/forms/AI-04_Reflective_Statement.md',
 ];
 
 const md = new MarkdownIt({ html: true, linkify: true });
