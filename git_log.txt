@@ -1,0 +1,52 @@
+c114d51 | 2026-11-18 12:16:57 +0700 | Tran Thanh An | [report] Export PDF versions of reports and appendices
+12c1718 | 2026-11-18 12:16:57 +0700 | Tran Thanh An | [setup] Add PDF export and packaging scripts
+26b220b | 2026-11-18 12:16:56 +0700 | Tran Thanh An | [report] Add self-assessment, submission index and skill demo results
+6a8984d | 2026-11-18 12:16:56 +0700 | Tran Thanh An | [forms] Fill AI-03 disclosure form
+403546e | 2026-11-18 12:16:56 +0700 | Tran Thanh An | [report] Add AI critique
+e1641f4 | 2026-11-18 12:16:56 +0700 | Tran Thanh An | [forms] Fill AI-02 audit report
+0689576 | 2026-11-18 12:14:00 +0700 | Tran Thanh An | [skill] Keep pasted prompt content when exporting prompt logs
+6d65d1e | 2026-11-18 10:48:53 +0700 | Tran Thanh An | [skill] Document agent skills and design rationale
+a6c2aee | 2026-11-18 10:48:53 +0700 | Tran Thanh An | [skill] Add Playwright data-driven automation skill
+7aec818 | 2026-11-18 10:48:53 +0700 | Tran Thanh An | [setup] Find spec by feature id and allow a separate report folder
+fbeb6fb | 2026-11-18 10:30:02 +0700 | Tran Thanh An | [report] Add public repository link to README
+fea2613 | 2026-11-18 10:18:42 +0700 | Tran Thanh An | [report] Add main report with automation results and gap analysis
+e8103b9 | 2026-11-18 10:17:56 +0700 | Tran Thanh An | [C-FR16][S8] Analyse AI gaps in generated automation
+a9d3a79 | 2026-11-18 10:17:56 +0700 | Tran Thanh An | [B-FR09][S8] Analyse AI gaps in generated automation
+6ed1613 | 2026-11-18 10:17:56 +0700 | Tran Thanh An | [A-FR02][S8] Analyse AI gaps in generated automation
+2da9353 | 2026-11-18 10:17:13 +0700 | Tran Thanh An | [C-FR16][S7] Map failing tests to reported issues
+c997706 | 2026-11-18 10:17:13 +0700 | Tran Thanh An | [B-FR09][S7] Map failing tests to reported issues
+0748b4c | 2026-11-18 10:17:12 +0700 | Tran Thanh An | [A-FR02][S7] Map failing tests to reported issues
+4809593 | 2026-11-18 10:17:12 +0700 | Tran Thanh An | [report] Add bug report mapping failures to HW02 issues
+f685397 | 2026-11-18 10:12:47 +0700 | Tran Thanh An | [setup] Keep HTML reports byte-exact in git
+67d154d | 2026-11-18 10:12:33 +0700 | Tran Thanh An | [report] Add test summary to README
+742bd25 | 2026-11-18 10:12:33 +0700 | Tran Thanh An | [C-FR16][S6] Record results of three browser runs
+86167f2 | 2026-11-18 10:12:33 +0700 | Tran Thanh An | [B-FR09][S6] Record results of three browser runs
+e855b3b | 2026-11-18 10:12:33 +0700 | Tran Thanh An | [A-FR02][S6] Record results of three browser runs
+092b65c | 2026-11-18 10:12:33 +0700 | Tran Thanh An | [report] Add multi-browser HTML reports (9 runs, Run by 23120017)
+19b6d1a | 2026-11-18 09:38:04 +0700 | Tran Thanh An | [setup] Add script to produce nine browser-run reports
+6cb5f56 | 2026-11-18 09:38:04 +0700 | Tran Thanh An | [setup] Configure three browsers and Run-by HTML report
+3e1fe73 | 2026-11-18 09:33:21 +0700 | Tran Thanh An | [C-FR16][S5] Document review findings and Chromium results
+7bfd4c5 | 2026-11-18 09:33:21 +0700 | Tran Thanh An | [B-FR09][S5] Document review findings and Chromium results
+43732bd | 2026-11-18 09:33:21 +0700 | Tran Thanh An | [A-FR02][S5] Document review findings and Chromium results
+f4ff939 | 2026-11-18 09:32:20 +0700 | Tran Thanh An | [C-FR16][S5] Report count, reason and saved names together with soft assertions
+de4487e | 2026-11-18 09:30:07 +0700 | Tran Thanh An | [B-FR09][S5] Wait for coupon result before asserting and report all amount checks
+7a62ca5 | 2026-11-18 09:27:30 +0700 | Tran Thanh An | [A-FR02][S5] Use soft assertions so every GUI defect is reported
+5a31b01 | 2026-11-18 09:22:59 +0700 | Tran Thanh An | [C-FR16][S5] Run data-driven cases independently instead of serial mode
+e48a0ef | 2026-11-18 09:22:59 +0700 | Tran Thanh An | [B-FR09][S5] Run data-driven cases independently instead of serial mode
+b902129 | 2026-11-18 09:22:59 +0700 | Tran Thanh An | [A-FR02][S5] Run data-driven cases independently instead of serial mode
+2b994b0 | 2026-11-17 23:56:28 +0700 | Tran Thanh An | [C-FR16][S4] Generate data-driven import spec with AI
+ba62482 | 2026-11-17 23:56:28 +0700 | Tran Thanh An | [B-FR09][S4] Generate data-driven coupon spec with AI
+ac00683 | 2026-11-17 23:56:28 +0700 | Tran Thanh An | [A-FR02][S4] Generate data-driven login spec with AI
+c325abb | 2026-11-17 23:41:22 +0700 | Tran Thanh An | [C-FR16][S3] Add AdminImportPage page object
+b0e002d | 2026-11-17 23:41:22 +0700 | Tran Thanh An | [B-FR09][S3] Add CheckoutPage page object
+c450b7b | 2026-11-17 23:41:22 +0700 | Tran Thanh An | [A-FR02][S3] Add LoginPage page object
+4693f09 | 2026-11-17 23:41:22 +0700 | Tran Thanh An | [setup] Add test helpers for data loading and backend setup
+53273d3 | 2026-11-17 23:30:18 +0700 | Tran Thanh An | [C-FR16][S2] Keep CSV fixtures byte-exact in git
+695c119 | 2026-11-17 23:29:59 +0700 | Tran Thanh An | [C-FR16][S2] Add data file and CSV fixtures for import tests
+8b6ca2c | 2026-11-17 23:29:59 +0700 | Tran Thanh An | [B-FR09][S2] Add data file for coupon tests
+a12ec77 | 2026-11-17 23:29:59 +0700 | Tran Thanh An | [A-FR02][S2] Add data file for login tests
+a5bed17 | 2026-11-17 23:24:35 +0700 | Tran Thanh An | [C-FR16][S1] Select test cases to automate
+7994582 | 2026-11-17 23:24:35 +0700 | Tran Thanh An | [B-FR09][S1] Select test cases to automate
+8bbf7cf | 2026-11-17 23:24:34 +0700 | Tran Thanh An | [A-FR02][S1] Select test cases to automate
+62d9d37 | 2026-11-17 23:14:01 +0700 | Tran Thanh An | [setup] Add Playwright project
+82a05b0 | 2026-11-17 22:30:54 +0700 | Tran Thanh An | [setup] Init HW04 repository
