@@ -170,3 +170,14 @@ Lệnh (sinh viên tự chạy): `npm run test:reports` → [`scripts/run-report
 |---|---|---|---|
 | [#96](https://github.com/angquoc/software-testing-2026-HW02-group/issues/96) | BUG-FR09-01 | Mã percent tính sai (tiền giảm âm, thành tiền ×10) | EP-01, EP-07, EP-08, EP-15, BVA-03 |
 | [#97](https://github.com/angquoc/software-testing-2026-HW02-group/issues/97) | BUG-FR09-02 | Từ chối khi tổng đúng bằng ngưỡng | BVA-02, BVA-05, BVA-08 |
+
+## S8. Phân tích phần AI làm sai / bỏ sót
+
+| # | AI sai / bỏ sót | Phát hiện ở | Loại | Nguyên nhân | Đã xử lý |
+|---|---|---|---|---|---|
+| G1 | `mode: 'serial'` | S5 (R1) | Cấu hình chạy | Như FR-02 G1 | Sửa |
+| G2 | `toHaveCount(0)` ngay sau response → có thể **Pass giả** khi giao diện chưa cập nhật | S5 (R2) | Chờ không ổn định / Pass giả | **Model:** coi "đã có response API" là "giao diện đã cập nhật"; không nhận ra assertion "phần tử không tồn tại" đúng ngay ở trạng thái ban đầu nên auto-wait không có tác dụng | Sửa: kiểm lý do trước |
+| G3 | Thông báo Fail "không thấy dòng Tiết kiệm" không nói lý do | S5 (R3) | Khả năng chẩn đoán | **Prompt:** không yêu cầu thông báo Fail phải đủ để phân loại lỗi | Sửa |
+| G4 | Assertion cứng: tiền giảm sai làm thành tiền và định dạng ₫ không được kiểm | S5 (R4) | Assertion thiếu | Như FR-02 G2 | Sửa (`expect.soft`) |
+| G5 | Bộ test UI **không bắt được 4 bug nặng nhất** của FR-09 (#98 Critical, #99 Critical, #100 High, #101 Medium): chúng nằm ở tầng API (không token, sửa `user_id`, sửa `total_amount`) | S1 | Bỏ sót do phạm vi | **Đặc điểm feature:** giao diện không cho tạo các request đó. Nếu chỉ dựa vào automation UI, sẽ có cảm giác an toàn sai | Ghi trong S1.2 và Bug Report; đề xuất bổ sung bộ test API (Playwright `request`) |
+| G6 | EP-07, EP-08 Pass ở HW02 nhưng Fail ở HW04 | S2 → S5 | Thay đổi oracle (có chủ đích) | Ở HW04 `expected` kiểm cả số tiền, nên cùng bug #96 lộ ra thêm ở 2 ca | Giữ, ghi rõ để không bị hiểu là bug mới |
