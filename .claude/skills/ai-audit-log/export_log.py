@@ -21,6 +21,8 @@ src, dst, title = args[0], args[1], args[2]
 
 VN = timezone(timedelta(hours=7))
 TAG = re.compile(r"<(ide_opened_file|ide_selection|system-reminder|command-[a-z]+|task-notification)>.*?</\1>", re.S)
+# Nội dung người dùng dán vào được bọc trong <pasted_content id="…">…</pasted_content>: giữ nội dung, bỏ thẻ
+PASTED = re.compile(r"</?pasted_content[^>]*>")
 
 
 def text_blocks(content):
@@ -47,7 +49,7 @@ for line in open(src, encoding="utf-8"):
     # Bỏ bản ghi user chỉ chứa tool_result
     if t == "user" and isinstance(content, list) and all(isinstance(b, dict) and b.get("type") == "tool_result" for b in content):
         continue
-    texts = [TAG.sub("", x).strip() for x in text_blocks(content)]
+    texts = [PASTED.sub("", TAG.sub("", x)).strip() for x in text_blocks(content)]
     texts = [x for x in texts if x and not x.startswith("[Request interrupted") and not x.startswith("[SYSTEM NOTIFICATION")]
     if not texts:
         continue
