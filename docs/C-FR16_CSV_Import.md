@@ -170,3 +170,14 @@ Lệnh (sinh viên tự chạy): `npm run test:reports` → [`scripts/run-report
 | [#106](https://github.com/angquoc/software-testing-2026-HW02-group/issues/106) | BUG-FR16-05 | Không kiểm header | EP-04, EP-05, BVA-15 |
 | [#108](https://github.com/angquoc/software-testing-2026-HW02-group/issues/108) | BUG-FR16-07 | Chấp nhận category_id không tồn tại | EP-18 |
 | [#109](https://github.com/angquoc/software-testing-2026-HW02-group/issues/109) | BUG-FR16-08 | Chấp nhận tên 256 ký tự | BVA-09 |
+
+## S8. Phân tích phần AI làm sai / bỏ sót
+
+| # | AI sai / bỏ sót | Phát hiện ở | Loại | Nguyên nhân | Đã xử lý |
+|---|---|---|---|---|---|
+| G1 | File test CRLF bị Git lưu thành LF (`core.autocrlf=true`) → ca EP-20 sẽ sai trên máy khác | S2 | Dữ liệu test | **Đặc điểm môi trường:** AI chép file đúng nhưng không lường cấu hình Git của máy | Sửa (`.gitattributes -text`) |
+| G2 | Khối Import chọn sai `div`, nên không có ô chọn file | S3 | Selector sai | **Model:** viết selector khi chưa thấy DOM thật; giả định tiêu đề và ô file cùng nằm trong `div` nhỏ nhất | Sửa |
+| G3 | `isVisible()` ngay sau `goto` → trên **WebKit** bỏ qua bước đăng nhập Admin rồi timeout | S3 | Chờ không ổn định (chỉ lộ trên 1 trình duyệt) | **Model:** dùng kiểm tra tức thời thay cho chờ; Chromium/Firefox vẽ kịp nên không lộ | Sửa: chờ `emailInput.or(productsMenu)` |
+| G4 | `mode: 'serial'` | S5 (R1) | Cấu hình chạy | Như FR-02 G1 | Sửa |
+| G5 | Assertion cứng: khi không rollback thì không kiểm lý do và tên đã lưu; thông báo Fail chỉ là locator dài | S5 (R2, R3) | Assertion thiếu, khó chẩn đoán | Như FR-02 G2 | Sửa |
+| G6 | Chưa tự động hóa: tên tiếng Việt có dấu, trường bọc nháy chứa xuống dòng (RFC 4180), API import bằng token user (#107 Critical) | S1 | Bỏ sót ca biên | **Prompt / dữ liệu HW02:** danh mục HW02 dùng tên ASCII. #107 chỉ tái hiện được ở tầng API | Ghi trong S1.2 / Bug Report |
