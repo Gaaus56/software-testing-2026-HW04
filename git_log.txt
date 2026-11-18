@@ -1,3 +1,8 @@
+f4b36ce | 2026-11-18 12:36:51 +0700 | Tran Thanh An | [report] Refresh PDF exports
+15f083c | 2026-11-18 12:36:49 +0700 | Tran Thanh An | [report] Add demo video links and finalize submission documents
+c6ed232 | 2026-11-18 12:36:49 +0700 | Tran Thanh An | [forms] Set AI category 4 and add AI-04 reflective statement
+15ee372 | 2026-11-18 12:36:48 +0700 | Tran Thanh An | [forms] Finalize AI-02 audit report after critique review
+489850b | 2026-11-18 12:16:57 +0700 | Tran Thanh An | [report] Export git commit log
 c114d51 | 2026-11-18 12:16:57 +0700 | Tran Thanh An | [report] Export PDF versions of reports and appendices
 12c1718 | 2026-11-18 12:16:57 +0700 | Tran Thanh An | [setup] Add PDF export and packaging scripts
 26b220b | 2026-11-18 12:16:56 +0700 | Tran Thanh An | [report] Add self-assessment, submission index and skill demo results
