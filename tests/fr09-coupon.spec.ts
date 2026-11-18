@@ -54,22 +54,26 @@ for (const tc of cases) {
     }
 
     if (expected.outcome === 'rejected') {
-      await expect(cp.savingAmount).toHaveCount(0);
-      await expect(cp.couponSection).toContainText(new RegExp(expected.reasonPattern!, 'i'));
+      // Chờ thông báo kết quả hiện ra TRƯỚC, rồi mới kiểm không có dòng "Tiết kiệm".
+      // (Kiểm toHaveCount(0) ngay sau response có thể Pass trước khi React kịp vẽ kết quả.)
+      await expect(cp.couponSection, 'Thông báo phải nêu lý do từ chối').toContainText(new RegExp(expected.reasonPattern!, 'i'));
+      await expect(cp.savingAmount, 'Mã bị từ chối thì không được hiện tiền giảm').toHaveCount(0);
       return;
     }
 
-    // applied
+    // applied: kiểm thông báo thành công trước để khi Fail, báo cáo hiện nguyên văn lý do bị từ chối
+    await expect(cp.couponSection, 'Mã phải được áp dụng').toContainText(/thành công/i);
     await expect(cp.savingAmount).toBeVisible();
     const discount = parseMoney(await cp.savingAmount.innerText());
     const final = parseMoney(await cp.finalAmount.innerText());
     const tol = expected.tolerance ?? 0;
-    expect(Math.abs(discount - expected.discount!), `Tiền giảm ${discount}, mong đợi ${expected.discount}`).toBeLessThanOrEqual(tol);
-    expect(Math.abs(final - expected.final!), `Thành tiền ${final}, mong đợi ${expected.final}`).toBeLessThanOrEqual(tol);
+    // soft: báo đủ cả tiền giảm, thành tiền và định dạng thay vì dừng ở lỗi đầu tiên
+    expect.soft(Math.abs(discount - expected.discount!), `Tiền giảm ${discount}, mong đợi ${expected.discount}`).toBeLessThanOrEqual(tol);
+    expect.soft(Math.abs(final - expected.final!), `Thành tiền ${final}, mong đợi ${expected.final}`).toBeLessThanOrEqual(tol);
 
     if (expected.displayFormat === 'thousands-separator-dong') {
-      await expect(cp.savingAmount).toHaveText(/^\d{1,3}([.,]\d{3})+ ₫$/);
-      await expect(cp.finalAmount).toHaveText(/^\d{1,3}([.,]\d{3})+ ₫$/);
+      await expect.soft(cp.savingAmount, 'Tiền giảm hiển thị dạng 40,000 ₫').toHaveText(/^\d{1,3}([.,]\d{3})+ ₫$/);
+      await expect.soft(cp.finalAmount, 'Thành tiền hiển thị dạng 360,000 ₫').toHaveText(/^\d{1,3}([.,]\d{3})+ ₫$/);
     }
   });
 }
