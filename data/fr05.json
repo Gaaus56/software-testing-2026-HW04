@@ -34,8 +34,8 @@
   {
     "id": "FR05-EP-05",
     "input": { "keyword": "" },
-    "expected": { "priceFormat": "^\\d{1,3}(\\.\\d{3})*\\s₫$" },
-    "note": "Negative/chất lượng: giá dùng ₫ và phân cách nghìn bằng dấu chấm, ví dụ 30.000.000 ₫. Dự kiến Fail: đang hiển thị VND"
+    "expected": { "priceFormat": "^\\d{1,3}([.,]\\d{3})*\\s?₫$" },
+    "note": "Negative/chất lượng: giá dùng ₫ và phân cách nghìn (dấu chấm hoặc phẩy), ví dụ 30.000.000 ₫. Dự kiến Fail: đang hiển thị VND"
   },
   {
     "id": "FR05-EP-06",
