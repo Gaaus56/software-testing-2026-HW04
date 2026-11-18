@@ -127,3 +127,18 @@ Lỗi đã phát hiện và sửa ngay trong Page Object (xem S3): không có l�
 | FR02-BVA-01 | 2 lần sai → mật khẩu đúng → 403 | #90 |
 | FR02-BVA-06 | Chờ 30 s → vẫn 403 | #91 |
 | FR02-BVA-07 | Chờ 31 s → vẫn 403 | #91 |
+
+## S6. Chạy trên 3 trình duyệt
+
+Lệnh (sinh viên tự chạy): `npm run test:reports` → [`scripts/run-reports.ps1`](../scripts/run-reports.ps1). Mỗi lần chạy có một báo cáo HTML Playwright, tiêu đề `EShop HW04 — Run by: 23120017 — <thời điểm ISO>`, metadata `Run by` / `Run at (ISO)`, ảnh chụp ở các test Fail.
+
+| Trình duyệt | Báo cáo HTML | Bắt đầu (ISO, UTC) | Run by | Pass | Fail | Flaky | Skipped | Giây |
+|---|---|---|---|---|---|---|---|---|
+| chromium | [`reports/FR02-chromium/`](../reports/FR02-chromium/index.html) | 2026-11-18T02:47:31.215Z | 23120017 | 11 | 7 | 0 | 0 | 161 |
+| firefox | [`reports/FR02-firefox/`](../reports/FR02-firefox/index.html) | 2026-11-18T02:50:13.420Z | 23120017 | 11 | 7 | 0 | 0 | 206 |
+| webkit | [`reports/FR02-webkit/`](../reports/FR02-webkit/index.html) | 2026-11-18T02:53:40.877Z | 23120017 | 11 | 7 | 0 | 0 | 157 |
+
+- **Kết quả giống nhau trên cả 3 trình duyệt:** có. Cùng 7 ca Fail: FR02-BVA-01, FR02-BVA-06, FR02-BVA-07, FR02-EP-04, FR02-EP-09, FR02-EP-10, FR02-EP-11.
+- **Không có ca flaky**, không có ca bị bỏ qua. Không có lỗi nào chỉ xuất hiện trên một trình duyệt.
+- Mọi ca Fail đều do lỗi thật của SUT đã phân loại ở S5.2, trùng các bug HW02: #90, #91, #92, #93, #94, #95.
+- Ảnh bảng tổng hợp của lần chạy: [`docs/images/S6_run_summary.png`](images/S6_run_summary.png).
