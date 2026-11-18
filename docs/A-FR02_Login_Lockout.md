@@ -155,3 +155,15 @@ Lệnh (sinh viên tự chạy): `npm run test:reports` → [`scripts/run-report
 | [#93](https://github.com/angquoc/software-testing-2026-HW02-group/issues/93) | BUG-FR02-04 | Ô email type="text", không validate | EP-04, EP-09 |
 | [#94](https://github.com/angquoc/software-testing-2026-HW02-group/issues/94) | BUG-FR02-05 | Thông báo khi khóa không nói khóa, nằm dưới nút | EP-10 |
 | [#95](https://github.com/angquoc/software-testing-2026-HW02-group/issues/95) | BUG-FR02-06 | Tiêu đề/nhãn sai, thiếu * | EP-09 |
+
+## S8. Phân tích phần AI làm sai / bỏ sót
+
+| # | AI sai / bỏ sót | Phát hiện ở | Loại | Nguyên nhân | Đã xử lý |
+|---|---|---|---|---|---|
+| G1 | `mode: 'serial'` làm 14/18 test bị bỏ qua sau ca Fail đầu tiên | S5 (R1) | Cấu hình chạy | **Prompt:** không nói trước rằng bộ test có ca dự kiến Fail vì bug thật. **Model:** suy luận "dùng chung backend → serial" mà không xét hệ quả khi Fail | Sửa |
+| G2 | Assertion cứng: EP-09 chỉ báo 1/4 lỗi form, EP-10 không bao giờ kiểm vị trí thông báo | S5 (R2) | Assertion thiếu | **Prompt:** chỉ yêu cầu "≥ 3 kiểu assertion", không yêu cầu báo đủ lỗi trong một ca | Sửa (`expect.soft`) |
+| G3 | Ca `rejected` kiểm `toHaveURL(/login$/)`: luôn đúng vì trang login không chuyển hướng, nên assertion này gần như không có giá trị | S8 (rà lại) | Assertion yếu | **Model:** sinh assertion "cho đủ bộ" theo khuôn mẫu, không xét nó có phân biệt được đúng/sai hay không | Chưa sửa. Ca này vẫn được bảo vệ bằng assertion status 4xx và thông báo lỗi |
+| G4 | Chờ biên thời gian tính từ lúc kết thúc lần sai thứ 3 trên UI, không phải từ response của server; sai lệch vài trăm ms | S8 (rà lại) | Độ chính xác chờ | **Đặc điểm feature:** biên thời gian (29/30/31 s) nhạy với cách đo | Chấp nhận. Lỗi thật lệch ~150 s nên không ảnh hưởng kết luận |
+| G5 | Không tự động hóa được: mở khóa xong bộ đếm có reset không (EP-14), chuỗi status 401/401/403 (BVA-04) | S1 | Ca bị bỏ | **Đặc điểm feature:** phải chờ ~180 s × 3 trình duyệt; status chỉ thấy ở API | Ghi trong S1.2 |
+
+Lỗi không gặp ở FR-02: selector gãy. `LoginPage` đã xử lý nhãn không gắn với ô nhập ngay từ S3, và chạy đúng trên 3 trình duyệt.
