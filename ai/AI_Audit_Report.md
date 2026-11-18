@@ -15,7 +15,7 @@
 | AI used? | [x] Yes  [ ] No |
 
 **Khai báo:** *I use AI tools for the following tasks,* liệt kê ở bảng dưới. Nhật ký đầy đủ của từng lần tương tác (tên tool, ngày giờ, prompt nguyên văn, output dạng chữ) nằm trong 2 file phụ lục:
-- `ai/prompt_logs/23120017_HW04_prompt_log.md`: phiên làm bài chính, 21 prompt.
+- `ai/prompt_logs/23120017_HW04_prompt_log.md`: phiên làm bài chính (22 prompt).
 - `ai/prompt_logs/23120017_HW04_prompt_log_skill_demo.md`: phiên quay video Agent Skill, 5 prompt.
 
 Hai file này có trong file zip nộp Moodle, nhưng **không đẩy lên repo public**, vì đề cấm chép prompt giữa sinh viên.
@@ -38,6 +38,7 @@ Hai file này có trong file zip nộp Moodle, nhưng **không đẩy lên repo 
 | 15 | 10:47 18/11 | S9 Agent Skill, kịch bản 2 video | Skill `playwright-data-driven`, kịch bản video |
 | 16–20 | 11:03–11:41 18/11 | Hỏi về lệnh `clean`, ghép video, kịch bản lời đọc, đặt tên video | Giải thích, kịch bản chi tiết |
 | 21 | 12:12 18/11 | Push `skill-demo`, viết S11, đề xuất điểm | Tài liệu nộp (file này), PDF, git log |
+| 22 | 18/11 | Gửi link 2 video; chốt AI Critique, sửa Audit; kiểm tài liệu; xuất prompt log; push | Điền link video, AI-03 Category 4, AI-04, kiểm tra placeholder, push |
 
 ### Phiên demo Agent Skill (FR-05, nhánh `skill-demo`)
 
@@ -69,16 +70,16 @@ Hai file này có trong file zip nộp Moodle, nhưng **không đẩy lên repo 
 | 9 | Prompt 10 | `docs/Bug_Report.md`, mục S7 / S8, `docs/HW04_Report.md` | VALID | Mapping kiểm tự động (32 TC ↔ 15 issue); gap analysis có nguyên nhân (§5.5) | Sinh viên đăng comment HW04 lên 15 issue |
 | 10 | Prompt 15 | Skill `playwright-data-driven` + templates | VALID | Quy tắc lấy từ lỗi thật của HW04; demo FR-05 chạy end-to-end | — |
 | 11 | Demo, 11:51–11:59 18/11 | FR-05 trên `skill-demo`: 17 TC, data, Page Object, spec | INCOMPLETE | Bản đầu sai expected ở BVA-01 (tên sản phẩm); skill tự phát hiện ở S5 | Commit `[A-FR05][S5] Fix BVA-01 expected names` sau khi sinh viên duyệt |
-| 12 | Prompt 21 | Bản nháp AI Critique, form AI-03 | INCOMPLETE | Phản tư phải là của sinh viên | ⬜ Sinh viên đọc lại / viết lại bằng lời của mình |
+| 12 | Prompt 21–22 | AI Critique, form AI-03, AI-04 | VALID | Nội dung bám đúng các lỗi có thật trong S5 / S8; 296 tiếng (đề: 200–300) | Sinh viên đọc lại và chốt nội dung (18/11); chọn AI Category 4; tự ký AI-04 |
 
 ## 4. Summary of AI Accuracy
 
 | Metric | Count | Percentage |
 |---|---|---|
 | Total AI-generated artifacts audited | 12 | 100 % |
-| VALID (correct, accepted as-is) | 6 | 50 % |
+| VALID (correct, accepted as-is) | 7 | 58 % |
 | INVALID (wrong; rejected / sửa toàn bộ) | 2 | 17 % |
-| INCOMPLETE (acceptable after edits) | 4 | 33 % |
+| INCOMPLETE (acceptable after edits) | 3 | 25 % |
 
 Ở mức script: 3 spec / 68 test do AI sinh. Review phát hiện **13 chỗ cần sửa** (2 ở Page Object, 1 ở dữ liệu, 10 ở spec), đã sửa 12. Sau khi sửa, cả 32 ca Fail đều do lỗi thật của SUT.
 
