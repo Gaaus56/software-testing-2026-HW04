@@ -161,3 +161,12 @@ Lệnh (sinh viên tự chạy): `npm run test:reports` → [`scripts/run-report
 - **Không có ca flaky**, không có ca bị bỏ qua. Không có lỗi nào chỉ xuất hiện trên một trình duyệt.
 - Mọi ca Fail đều do lỗi thật của SUT đã phân loại ở S5.2, trùng các bug HW02: #96, #97.
 - Ảnh bảng tổng hợp của lần chạy: [`docs/images/S6_run_summary.png`](images/S6_run_summary.png).
+
+## S7. Bug
+
+8 TC Fail → 2 issue HW02, Fail trên cả 3 trình duyệt. Không có bug mới, nên **không tạo issue mới** (tránh trùng, theo quy ước nhóm). Bằng chứng tái hiện tự động được ghi vào [`docs/Bug_Report.md`](Bug_Report.md), kèm ảnh trang GitHub Issue trong `bugs/issue-screenshots/`.
+
+| Issue | Bug HW02 | Lỗi | TC HW04 Fail |
+|---|---|---|---|
+| [#96](https://github.com/angquoc/software-testing-2026-HW02-group/issues/96) | BUG-FR09-01 | Mã percent tính sai (tiền giảm âm, thành tiền ×10) | EP-01, EP-07, EP-08, EP-15, BVA-03 |
+| [#97](https://github.com/angquoc/software-testing-2026-HW02-group/issues/97) | BUG-FR09-02 | Từ chối khi tổng đúng bằng ngưỡng | BVA-02, BVA-05, BVA-08 |
