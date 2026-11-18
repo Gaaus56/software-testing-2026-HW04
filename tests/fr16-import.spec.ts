@@ -17,8 +17,10 @@ interface Expected {
 
 const cases = loadCases<Input, Expected>('fr16.json');
 
-// Các test đếm sản phẩm trong cùng một DB → chạy tuần tự
-test.describe.configure({ mode: 'serial' });
+// Không dùng mode 'serial': ở chế độ đó một test Fail (kể cả Fail do bug thật của SUT)
+// làm mọi test sau bị bỏ qua. Mỗi test tự reset backend nên độc lập; chạy với 1 worker
+// (workers: 1 trong playwright.config.ts) vì các test dùng chung một backend.
+test.describe.configure({ mode: 'default' });
 
 for (const tc of cases) {
   test(`${tc.id}: ${tc.note}`, async ({ page }) => {
