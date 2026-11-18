@@ -25,8 +25,10 @@ interface Expected {
 
 const cases = loadCases<Input, Expected>('fr02.json');
 
-// Các test dùng chung một backend (bộ đếm đăng nhập sai) → chạy tuần tự
-test.describe.configure({ mode: 'serial' });
+// Không dùng mode 'serial': ở chế độ đó một test Fail (kể cả Fail do bug thật của SUT)
+// làm mọi test sau bị bỏ qua. Mỗi test tự reset backend nên độc lập; chạy với 1 worker
+// (workers: 1 trong playwright.config.ts) vì các test dùng chung một backend.
+test.describe.configure({ mode: 'default' });
 
 /** Đăng nhập một lần qua form rồi đưa trang về trạng thái chưa đăng nhập */
 async function attempt(lp: LoginPage, acc: Account): Promise<Response | null> {
