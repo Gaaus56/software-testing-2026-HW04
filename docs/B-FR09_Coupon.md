@@ -119,3 +119,30 @@ File: [`tests/fr09-coupon.spec.ts`](../tests/fr09-coupon.spec.ts) — commit `[B
 | So số tiền có sai số | `expect(Math.abs(discount - expected)).toBeLessThanOrEqual(0.5)` | Công thức percent / fixed |
 | Định dạng hiển thị (regex) | `expect(cp.finalAmount).toHaveText(/^\d{1,3}([.,]\d{3})+ ₫$/)` | FR-21 |
 | URL | `expect(page).toHaveURL(...)` | Đăng nhập xong |
+
+## S5. Chạy thử, review và sửa script AI
+
+Chạy trên Chromium: `npx playwright test tests/fr09-coupon.spec.ts --browser=chromium --workers=1`.
+
+### S5.1 Lỗi của script AI và cách sửa
+
+| # | Vấn đề trong bản AI (S4) | Loại | Vì sao AI sai | Sửa | Commit |
+|---|---|---|---|---|---|
+| R1 | `mode: 'serial'`: một Fail làm các test sau bị bỏ qua | Cấu hình chạy sai | Như FR-02 R1 | Bỏ serial | `[B-FR09][S5] Run data-driven cases independently…` |
+| R2 | Ca bị từ chối: `expect(savingAmount).toHaveCount(0)` kiểm **ngay sau response**, lúc React có thể chưa vẽ kết quả → có thể Pass sai (kể cả khi sau đó mã được áp dụng) | Chờ không ổn định / Pass giả | AI coi "đã có response" là "giao diện đã cập nhật"; `toHaveCount(0)` đúng ngay ở trạng thái ban đầu nên auto-wait không giúp được | Kiểm lý do từ chối trước (assertion tự chờ thông báo hiện ra), rồi mới kiểm không có tiền giảm | `[B-FR09][S5] Wait for coupon result before asserting…` |
+| R3 | Ca áp dụng ở biên (BVA-02/05/08) Fail với thông báo "không thấy dòng Tiết kiệm sau 5 s", **không cho biết lý do** | Thông báo Fail khó hiểu | AI chỉ kiểm phần tử mong đợi, không kiểm trạng thái kết quả | Kiểm `toContainText(/thành công/)` trước; khi Fail báo cáo hiện nguyên văn "Đơn hàng chưa đủ giá trị tối thiểu 300,000 ₫…" | Cùng commit trên |
+| R4 | Tiền giảm sai làm test dừng → thành tiền và định dạng ₫ (EP-15) không được kiểm | Assertion thiếu | Như FR-02 R2 | `expect.soft` cho tiền giảm, thành tiền, định dạng | Cùng commit trên |
+
+### S5.2 Kết quả trên Chromium và phân loại Fail
+
+**16 Pass / 8 Fail.** Cả 8 Fail đều do **lỗi thật của SUT**:
+
+| TC | Thông báo Fail | Bug HW02 |
+|---|---|---|
+| FR09-EP-01 | Tiền giảm -9.000.000 (mong đợi 100.000) | #96 |
+| FR09-EP-07, EP-08 | Tiền giảm -3.600.000 (mong đợi 40.000) | #96 |
+| FR09-EP-15 | Tiền giảm, thành tiền sai; hiển thị "-3,600,000 ₫" | #96 |
+| FR09-BVA-03 | Tiền giảm -2.700.009 (mong đợi 30.000,1) | #96 |
+| FR09-BVA-02, 05, 08 | "Đơn hàng chưa đủ giá trị tối thiểu…" khi tổng đúng bằng ngưỡng | #97 |
+
+EP-07 và EP-08 Pass ở HW02 (chỉ kiểm "thành công") nhưng Fail ở HW04 vì giờ kiểm cả số tiền. Đây là cùng bug #96, không phải bug mới.
