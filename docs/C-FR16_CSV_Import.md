@@ -141,3 +141,18 @@ Lỗi đã sửa ngay trong Page Object ở S3: chọn sai khối Import, `isVis
 | FR16-EP-08, 09, 10, BVA-01, 02, 14 | Giá 0 / âm / chữ được lưu | #103 |
 | FR16-EP-18 | category_id = 99 được lưu | #108 |
 | FR16-BVA-09 | Tên 256 ký tự được lưu | #109 |
+
+## S6. Chạy trên 3 trình duyệt
+
+Lệnh (sinh viên tự chạy): `npm run test:reports` → [`scripts/run-reports.ps1`](../scripts/run-reports.ps1). Mỗi lần chạy có một báo cáo HTML Playwright, tiêu đề `EShop HW04 — Run by: 23120017 — <thời điểm ISO>`, metadata `Run by` / `Run at (ISO)`, ảnh chụp ở các test Fail.
+
+| Trình duyệt | Báo cáo HTML | Bắt đầu (ISO, UTC) | Run by | Pass | Fail | Flaky | Skipped | Giây |
+|---|---|---|---|---|---|---|---|---|
+| chromium | [`reports/FR16-chromium/`](../reports/FR16-chromium/index.html) | 2026-11-18T03:01:38.671Z | 23120017 | 9 | 17 | 0 | 0 | 112 |
+| firefox | [`reports/FR16-firefox/`](../reports/FR16-firefox/index.html) | 2026-11-18T03:03:32.195Z | 23120017 | 9 | 17 | 0 | 0 | 201 |
+| webkit | [`reports/FR16-webkit/`](../reports/FR16-webkit/index.html) | 2026-11-18T03:06:54.446Z | 23120017 | 9 | 17 | 0 | 0 | 119 |
+
+- **Kết quả giống nhau trên cả 3 trình duyệt:** có. Cùng 17 ca Fail: FR16-BVA-01, FR16-BVA-02, FR16-BVA-09, FR16-BVA-13, FR16-BVA-14, FR16-BVA-15, FR16-EP-02, FR16-EP-03, FR16-EP-04, FR16-EP-05, FR16-EP-06, FR16-EP-07, FR16-EP-08, FR16-EP-09, FR16-EP-10, FR16-EP-16, FR16-EP-18.
+- **Không có ca flaky**, không có ca bị bỏ qua. Không có lỗi nào chỉ xuất hiện trên một trình duyệt.
+- Mọi ca Fail đều do lỗi thật của SUT đã phân loại ở S5.2, trùng các bug HW02: #102, #103, #104, #105, #106, #108, #109.
+- Ảnh bảng tổng hợp của lần chạy: [`docs/images/S6_run_summary.png`](images/S6_run_summary.png).
