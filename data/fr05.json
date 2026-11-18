@@ -1,0 +1,134 @@
+[
+  {
+    "id": "FR05-EP-01",
+    "input": { "keyword": "" },
+    "expected": { "cardCount": 5 },
+    "note": "Positive: trang chủ hiển thị lưới đủ 5 sản phẩm seed. FR-05 mục 1"
+  },
+  {
+    "id": "FR05-EP-02",
+    "input": { "keyword": "" },
+    "expected": { "allCardsHaveImgSrc": true },
+    "note": "Positive: mỗi thẻ có ảnh với src khác rỗng. FR-05 mục 2 (Ảnh)"
+  },
+  {
+    "id": "FR05-EP-03",
+    "input": { "keyword": "" },
+    "expected": { "allImgAltNonEmpty": true, "altEqualsName": true },
+    "note": "Negative/chất lượng: ảnh phải có alt text mô tả (không rỗng). Dự kiến Fail: alt=\"\""
+  },
+  {
+    "id": "FR05-EP-04",
+    "input": { "keyword": "" },
+    "expected": {
+      "names": [
+        "iPhone 15 Pro Max",
+        "Samsung Galaxy S24 Ultra",
+        "MacBook Pro M3",
+        "Tai nghe AirPods Pro 2",
+        "Bàn phím cơ Keychron Q1"
+      ]
+    },
+    "note": "Positive: tên sản phẩm trên thẻ khớp tên trong API (so tập hợp, không theo thứ tự). FR-05 mục 2 (Tên)"
+  },
+  {
+    "id": "FR05-EP-05",
+    "input": { "keyword": "" },
+    "expected": { "priceFormat": "^\\d{1,3}(\\.\\d{3})*\\s₫$" },
+    "note": "Negative/chất lượng: giá dùng ₫ và phân cách nghìn bằng dấu chấm, ví dụ 30.000.000 ₫. Dự kiến Fail: đang hiển thị VND"
+  },
+  {
+    "id": "FR05-EP-06",
+    "input": { "keyword": "" },
+    "expected": {
+      "priceByName": {
+        "iPhone 15 Pro Max": 30000000,
+        "Samsung Galaxy S24 Ultra": 28000000,
+        "MacBook Pro M3": 45000000,
+        "Tai nghe AirPods Pro 2": 6000000,
+        "Bàn phím cơ Keychron Q1": 4000000
+      }
+    },
+    "note": "Positive: giá trên thẻ (sau khi bỏ dấu phân cách và đơn vị) khớp giá API. FR-05 mục 2 (Giá)"
+  },
+  {
+    "id": "FR05-EP-08",
+    "input": { "keyword": "Pro" },
+    "expected": {
+      "names": ["iPhone 15 Pro Max", "MacBook Pro M3", "Tai nghe AirPods Pro 2"]
+    },
+    "note": "Positive: tìm theo tên, trả đúng 3 sản phẩm chứa 'Pro'. FR-05 mục 3"
+  },
+  {
+    "id": "FR05-EP-09",
+    "input": { "keyword": "xyzkhongco" },
+    "expected": { "cardCount": 0, "emptyStateVisible": true },
+    "note": "Negative: không có kết quả thì không có thẻ và có thông báo empty state. FR-05 mục 5. Dự kiến Fail: không có thông báo"
+  },
+  {
+    "id": "FR05-EP-10",
+    "input": { "keyword": "" },
+    "expected": { "cardCount": 5 },
+    "note": "Positive: từ khóa rỗng hiển thị lại toàn bộ danh sách"
+  },
+  {
+    "id": "FR05-EP-11",
+    "input": { "keyword": "IPHONE" },
+    "expected": { "names": ["iPhone 15 Pro Max"] },
+    "note": "Positive: tìm không phân biệt hoa/thường. Đặc tả không nói rõ, cần xác nhận"
+  },
+  {
+    "id": "FR05-EP-12",
+    "input": { "keyword": "<b>iPhone</b>" },
+    "expected": {
+      "keywordDisplayed": "<b>iPhone</b>",
+      "noInjectedElement": "b",
+      "cardCount": 0
+    },
+    "note": "Negative: từ khóa chứa thẻ HTML phải hiển thị nguyên văn dưới dạng text, không tạo phần tử <b>. FR-05 mục 3 (hiển thị an toàn). Dự kiến Fail: dangerouslySetInnerHTML"
+  },
+  {
+    "id": "FR05-EP-13",
+    "input": { "keyword": "'" },
+    "expected": { "noDbErrorText": "Database Error", "noErrorHtmlBox": true },
+    "note": "Negative: từ khóa có dấu nháy đơn không làm lộ lỗi DB thô. Oracle cần xác nhận (suy ra từ 'hiển thị an toàn'). Dự kiến Fail: backend trả Database Error"
+  },
+  {
+    "id": "FR05-EP-14",
+    "input": { "keyword": "", "apiDelayMs": 1500 },
+    "expected": { "loadingVisibleWhileDelayed": true, "cardCountAfter": 5 },
+    "note": "Positive: khi API bị trì hoãn (route delay), có phần tử loading; sau khi tải xong hiển thị 5 thẻ. FR-05 mục 4. Dự kiến Fail: không có loading"
+  },
+  {
+    "id": "FR05-EP-15",
+    "input": { "keyword": "" },
+    "expected": { "h1Count": 1 },
+    "note": "Positive: trang chủ có đúng một h1 khi có kết quả. FR-05 mục 6. Dự kiến Fail: có thêm h1 đếm sản phẩm"
+  },
+  {
+    "id": "FR05-EP-16",
+    "input": { "keyword": "xyzkhongco" },
+    "expected": { "h1Count": 1 },
+    "note": "Positive: trang chủ có đúng một h1 khi không có kết quả. FR-05 mục 6"
+  },
+  {
+    "id": "FR05-BVA-01",
+    "input": { "keyword": "a" },
+    "expected": {
+      "names": [
+        "iPhone 15 Pro Max",
+        "Samsung Galaxy S24 Ultra",
+        "MacBook Pro M3",
+        "Tai nghe AirPods Pro 2",
+        "Bàn phím cơ Keychron Q1"
+      ]
+    },
+    "note": "Biên dưới: từ khóa 1 ký tự. Cả 5 sản phẩm đều chứa 'a' (không phân biệt hoa/thường)"
+  },
+  {
+    "id": "FR05-BVA-02",
+    "input": { "keywordChar": "x", "keywordLength": 255 },
+    "expected": { "cardCount": 0, "emptyStateVisible": true, "noErrorHtmlBox": true },
+    "note": "Biên: từ khóa 255 ký tự không có kết quả, có empty state, không lỗi. Script tự sinh chuỗi 255 ký tự. Đặc tả không giới hạn độ dài, 255 là biên thử nghiệm"
+  }
+]
