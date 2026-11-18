@@ -37,6 +37,6 @@ Dùng lại 3 feature Web đã chọn ở HW02 (repo HW02: `software-testing-202
 
 ## Liên kết
 
-- Repo public: _(điền link GitHub)_
+- Repo public: https://github.com/Gaaus56/software-testing-2026-HW04
 - Video demo (YouTube unlisted): _(chưa có)_
 - Video Agent Skill: _(chưa có)_
