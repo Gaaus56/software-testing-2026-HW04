@@ -25,3 +25,7 @@ ai/prompt_logs/
 
 # File zip nộp bài
 *.zip
+
+# Báo cáo chạy thử / chạy khi quay video (không phải báo cáo nộp)
+reports-video/
+reports-demo/
