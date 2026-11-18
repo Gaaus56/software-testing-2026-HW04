@@ -119,11 +119,10 @@
         "iPhone 15 Pro Max",
         "Samsung Galaxy S24 Ultra",
         "MacBook Pro M3",
-        "Tai nghe AirPods Pro 2",
-        "Bàn phím cơ Keychron Q1"
+        "Tai nghe AirPods Pro 2"
       ]
     },
-    "note": "Biên dưới: từ khóa 1 ký tự. Cả 5 sản phẩm đều chứa 'a' (không phân biệt hoa/thường)"
+    "note": "Biên dưới: từ khóa 1 ký tự 'a'. 4 sản phẩm chứa 'a' (không phân biệt hoa/thường). 'Bàn phím cơ Keychron Q1' không chứa 'a' ASCII (chỉ có 'à'), nên không khớp. Sửa ở S5: lỗi kỳ vọng trong data, không phải lỗi SUT"
   },
   {
     "id": "FR05-BVA-02",

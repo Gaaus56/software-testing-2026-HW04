@@ -61,3 +61,33 @@ Dự kiến Fail khi chạy (theo mã nguồn, chưa xác nhận): EP-03, EP-05,
 5. Duyệt danh sách 17 TC ở mục 2.
 
 Sau khi duyệt, tôi sẽ làm S2 (`data/fr05.json`) và commit `[A-FR05][S1] ...`.
+
+## S5 — Chạy, review, phân loại (Chromium)
+
+Lệnh: `npx playwright test tests/fr05-product-search.spec.ts --project=chromium`. Lần chạy đầu: 9 Fail, 8 Pass. Sau khi sửa dữ liệu: **8 Fail, 9 Pass**.
+
+| TC | Kết quả | Phân loại | Ghi chú |
+|---|---|---|---|
+| FR05-EP-03 | Fail | Lỗi thật của SUT | `alt=""` ở cả 5 ảnh |
+| FR05-EP-05 | Fail | Lỗi thật của SUT | Hiển thị `30,000,000 VND`, không dùng ₫ |
+| FR05-EP-09 | Fail | Lỗi thật của SUT | Không có thông báo empty state |
+| FR05-EP-12 | Fail | Lỗi thật của SUT | `<b>iPhone</b>` bị render thành thẻ `<b>`; hiển thị `iPhone` |
+| FR05-EP-13 | Fail | Lỗi thật của SUT (oracle cần xác nhận) | Backend trả `Database Error` (SQLITE_ERROR) và UI hiển thị |
+| FR05-EP-14 | Fail | Lỗi thật của SUT | Không có phần tử loading khi API bị trì hoãn |
+| FR05-EP-15 | Fail | Lỗi thật của SUT | 2 thẻ h1 khi có kết quả |
+| FR05-BVA-02 | Fail | Lỗi thật của SUT | Không có empty state khi từ khóa 255 ký tự không có kết quả |
+| FR05-BVA-01 | Fail → Pass | **Lỗi dữ liệu (script/data)** | Dữ liệu kỳ vọng sai: "Bàn phím cơ Keychron Q1" không chứa `a` ASCII (chỉ có `à`). Đã sửa `data/fr05.json` còn 4 tên |
+
+Các TC Pass: EP-01, 02, 04, 06, 08, 10, 11, 16 và BVA-01 (sau sửa dữ liệu).
+
+**Kiểm review (checklist skill):**
+1. Không dùng `serial`; mỗi test tự reset backend. OK.
+2. Nhiều kiểm tra độc lập dùng `expect.soft`. OK.
+3. Assertion "không tồn tại" đặt sau bước chờ kết quả (`settled`). OK.
+4. Mỗi assertion có thông báo nêu rõ lỗi nghiệp vụ. OK.
+5. Loại assertion: `toHaveCount` cho đếm h1, `toBeVisible` cho empty state và loading. OK.
+6. Không có `waitForTimeout`; độ trễ chỉ nằm trong `page.route` của ca loading (là dữ liệu test). OK.
+
+**Lỗi script đã sửa trong S5:** 1 (BVA-01 dữ liệu kỳ vọng). Không có Fail nào do script khác.
+
+**Việc còn lại cho người dùng:** lần chạy chính thức trên 3 trình duyệt và báo cáo "Run by" (S6) do bạn tự chạy bằng `scripts/run-reports.ps1`. Oracle cần xác nhận: FR05-EP-11, EP-13, EP-14.
