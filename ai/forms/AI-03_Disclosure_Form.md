@@ -9,7 +9,7 @@
 | Course | CS423 / CSC13003 – Software Testing |
 | Assignment ID | HW04 |
 | Assignment Title | Automation Testing on EShop |
-| AI Use Category (1–5) | Category ___ _(sinh viên chọn theo AI Usage Guideline)_ |
+| AI Use Category (1–5) | Category 4 — AI-assisted production (kèm AI-04 Reflective Statement) |
 | Date | 18/11/2026 |
 | Student name | Trần Thanh An |
 | Student ID | 23120017 |
