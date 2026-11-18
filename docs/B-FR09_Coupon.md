@@ -146,3 +146,18 @@ Chạy trên Chromium: `npx playwright test tests/fr09-coupon.spec.ts --browser=
 | FR09-BVA-02, 05, 08 | "Đơn hàng chưa đủ giá trị tối thiểu…" khi tổng đúng bằng ngưỡng | #97 |
 
 EP-07 và EP-08 Pass ở HW02 (chỉ kiểm "thành công") nhưng Fail ở HW04 vì giờ kiểm cả số tiền. Đây là cùng bug #96, không phải bug mới.
+
+## S6. Chạy trên 3 trình duyệt
+
+Lệnh (sinh viên tự chạy): `npm run test:reports` → [`scripts/run-reports.ps1`](../scripts/run-reports.ps1). Mỗi lần chạy có một báo cáo HTML Playwright, tiêu đề `EShop HW04 — Run by: 23120017 — <thời điểm ISO>`, metadata `Run by` / `Run at (ISO)`, ảnh chụp ở các test Fail.
+
+| Trình duyệt | Báo cáo HTML | Bắt đầu (ISO, UTC) | Run by | Pass | Fail | Flaky | Skipped | Giây |
+|---|---|---|---|---|---|---|---|---|
+| chromium | [`reports/FR09-chromium/`](../reports/FR09-chromium/index.html) | 2026-11-18T02:56:19.805Z | 23120017 | 16 | 8 | 0 | 0 | 81 |
+| firefox | [`reports/FR09-firefox/`](../reports/FR09-firefox/index.html) | 2026-11-18T02:57:42.312Z | 23120017 | 16 | 8 | 0 | 0 | 151 |
+| webkit | [`reports/FR09-webkit/`](../reports/FR09-webkit/index.html) | 2026-11-18T03:00:14.353Z | 23120017 | 16 | 8 | 0 | 0 | 83 |
+
+- **Kết quả giống nhau trên cả 3 trình duyệt:** có. Cùng 8 ca Fail: FR09-BVA-02, FR09-BVA-03, FR09-BVA-05, FR09-BVA-08, FR09-EP-01, FR09-EP-07, FR09-EP-08, FR09-EP-15.
+- **Không có ca flaky**, không có ca bị bỏ qua. Không có lỗi nào chỉ xuất hiện trên một trình duyệt.
+- Mọi ca Fail đều do lỗi thật của SUT đã phân loại ở S5.2, trùng các bug HW02: #96, #97.
+- Ảnh bảng tổng hợp của lần chạy: [`docs/images/S6_run_summary.png`](images/S6_run_summary.png).
