@@ -142,3 +142,16 @@ Lệnh (sinh viên tự chạy): `npm run test:reports` → [`scripts/run-report
 - **Không có ca flaky**, không có ca bị bỏ qua. Không có lỗi nào chỉ xuất hiện trên một trình duyệt.
 - Mọi ca Fail đều do lỗi thật của SUT đã phân loại ở S5.2, trùng các bug HW02: #90, #91, #92, #93, #94, #95.
 - Ảnh bảng tổng hợp của lần chạy: [`docs/images/S6_run_summary.png`](images/S6_run_summary.png).
+
+## S7. Bug
+
+7 TC Fail → 6 issue HW02, Fail trên cả 3 trình duyệt. Không có bug mới, nên **không tạo issue mới** (tránh trùng, theo quy ước nhóm). Bằng chứng tái hiện tự động được ghi vào [`docs/Bug_Report.md`](Bug_Report.md), kèm ảnh trang GitHub Issue trong `bugs/issue-screenshots/`.
+
+| Issue | Bug HW02 | Lỗi | TC HW04 Fail |
+|---|---|---|---|
+| [#90](https://github.com/angquoc/software-testing-2026-HW02-group/issues/90) | BUG-FR02-01 | Sai 2 lần thì lần 3 đúng vẫn bị khóa | EP-11, BVA-01 |
+| [#91](https://github.com/angquoc/software-testing-2026-HW02-group/issues/91) | BUG-FR02-02 | Khóa ~180 s thay vì 30 s | BVA-06, BVA-07 |
+| [#92](https://github.com/angquoc/software-testing-2026-HW02-group/issues/92) | BUG-FR02-03 | Ô mật khẩu type="text" | EP-09 |
+| [#93](https://github.com/angquoc/software-testing-2026-HW02-group/issues/93) | BUG-FR02-04 | Ô email type="text", không validate | EP-04, EP-09 |
+| [#94](https://github.com/angquoc/software-testing-2026-HW02-group/issues/94) | BUG-FR02-05 | Thông báo khi khóa không nói khóa, nằm dưới nút | EP-10 |
+| [#95](https://github.com/angquoc/software-testing-2026-HW02-group/issues/95) | BUG-FR02-06 | Tiêu đề/nhãn sai, thiếu * | EP-09 |
